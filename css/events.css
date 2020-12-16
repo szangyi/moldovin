@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+:root {
+    --color-1: #000000;
+    --color-2: #404040;
+    --color-3: #e6e6e6;
+    --color-4: #ffffff;
+    --color-5: #ba2424;
+
+
+    --primary-font: 'Lato', sans-serif;
+    --secondary-font: 'Cinzel', sans-serif;
+
+    --white-space: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+}
+
+
+h1{
+    align-self: center;
+    color: white;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+
+h2 {
+    font-family: var(--secondary-font);
+    padding-bottom: 5vw;
+}
+
+h3 {
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    color: var(--color-3);
+    font-weight: 300;
+}
+
+.banner {
+    background-image: url(../images/photos/events/bgimage_events.png);
+    background-size: contain;
+    height: 48vw;
+    width: 100vw;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.events_intro {
+    text-align: center;
+    padding-bottom: 5vw;
+}
+
+.eventimages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 3rem
+}
+
+.publiceventsimg {
+    background-image: url(../images/photos/events/publicevents.png);
+    background-size: cover;
+    width: 25rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.privateeventsimg {
+    background-image: url(../images/photos/events/private%20events.png);
+    background-size: cover;
+    width: 25rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: var(--color-5);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 1.3vw 2vw
+}
+
+
+.offer {
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textcard {}
