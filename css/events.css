@@ -23,7 +23,8 @@
 }
 
 body {
-    padding: 0 6vw;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -31,7 +32,15 @@ p {
     font-weight: 300;
 }
 
-h1 {
+
+h1{
+    align-self: center;
+    color: white;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+
+h2 {
     font-family: var(--secondary-font);
     padding-bottom: 5vw;
 }
@@ -43,8 +52,21 @@ h3 {
     font-weight: 300;
 }
 
+.banner {
+    background-image: url(../images/photos/events/bgimage_events.png);
+    background-size: contain;
+    height: 48vw;
+    width: 100vw;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+
 .events_intro {
     text-align: center;
+    padding-bottom: 5vw;
 }
 
 .eventimages {
@@ -58,20 +80,33 @@ h3 {
     background-image: url(../images/photos/events/publicevents.png);
     background-size: cover;
     width: 25rem;
-    height: 25rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .privateeventsimg {
     background-image: url(../images/photos/events/private%20events.png);
     background-size: cover;
     width: 25rem;
-    height: 25rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
+
+button {
+    background-color: var(--color-5);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 1.3vw 2vw
+}
+
 
 .offer {
     background-color: var(--color-2);
-    margin: 0 -6vw;
-    padding: 0 6vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,6 +129,4 @@ h3 {
     align-items: center;
 }
 
-.textcard {
-
-}
+.textcard {}
