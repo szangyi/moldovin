@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+:root {
+    --color-1: #000000;
+    --color-2: #404040;
+    --color-3: #e6e6e6;
+    --color-4: #ffffff;
+    --color-5: #ba2424;
+
+
+    --primary-font: 'Lato', sans-serif;
+    --secondary-font: 'Cinzel', sans-serif;
+
+    --white-space: 1rem;
+}
+
+body {
+    padding: 0 6vw;
+}
+
+p {
+    font-family: var(--primary-font)
+}
+
+h1{
+    font-family: var(--secondary-font)
+}
+
+h3{
+    font-family: var(--primary-font);
+   text-transform: uppercase;
+    color: var(--color-3);
+    font-weight: 300;
+}
+
+.events_intro {
+    text-align: center;
+}
+
+.eventimages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 3rem
+}
+
+.publiceventsimg{
+    background-image: url(../images/photos/events/publicevents.png);
+    background-size: cover;
+    width: 25rem;
+    height: 25rem;
+}
+
+.privateeventsimg{
+    background-image: url(../images/photos/events/private%20events.png);
+    background-size: cover;
+    width: 25rem;
+    height: 25rem;
+}
