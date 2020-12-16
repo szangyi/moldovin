@@ -113,7 +113,8 @@ button {
     color: white;
     text-transform: uppercase;
     border: none;
-    padding: 1.3vw 2vw
+    padding: 1.3vw 2vw;
+    width: fit-content;
 }
 
 
@@ -145,16 +146,34 @@ button {
 
 .wrapper2 {
     display: grid;
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vw
 }
 .event1image {
-    background-image: url(../images/photos/events/publicevents.png);
+    background-image: url(../images/photos/events/tastingcph.png);
     background-size: cover;
-    width: 25rem;
+    width: auto;
     height: 30rem;
+}
 
+.event2image {
+    background-image: url(../images/photos/events/tastingaarhus.png);
+    background-size: cover;
+    width: auto;
+    height: 30rem;
+}
+
+.event {
+    background-color: var(--color-3);
+    margin: 8vw 0;
 }
 
 .center {
    text-align: center;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
 }
