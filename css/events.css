@@ -40,9 +40,10 @@ h1{
     font-weight: 500;
 }
 
-h2 {
+h2, h5 {
     font-family: var(--secondary-font);
     padding-bottom: 5vw;
+    font-size: 3vw;
 }
 
 h3 {
@@ -52,7 +53,7 @@ h3 {
     font-weight: 300;
 }
 
-.banner {
+.bannerevents {
     background-image: url(../images/photos/events/bgimage_events.png);
     background-size: contain;
     height: 48vw;
@@ -63,8 +64,19 @@ h3 {
 
 }
 
+.bannerpublicevents {
+    background-image: url(../images/photos/events/bgimage_eventspublic.png);
+    background-size: contain;
+    height: 48vw;
+    width: 100vw;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: center;
 
-.events_intro {
+}
+
+
+.intro {
     text-align: center;
     padding-bottom: 5vw;
 }
@@ -130,3 +142,19 @@ button {
 }
 
 .textcard {}
+
+.wrapper2 {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+}
+.event1image {
+    background-image: url(../images/photos/events/publicevents.png);
+    background-size: cover;
+    width: 25rem;
+    height: 30rem;
+
+}
+
+.center {
+   text-align: center;
+}
