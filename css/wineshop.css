@@ -89,7 +89,6 @@ h1{
     font-weight: 500;
 }
 
-
 h2 {
     font-family: var(--secondary-font);
     padding-bottom: 3vw;
@@ -126,7 +125,6 @@ h3 {
 
 /* FILTERS STYLING */
 
-
 .filterwrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -151,37 +149,6 @@ h3 {
     font-size: 1.3vw;
     font-weight: 300;
 }
-
-/*.filternav li + li::before {
-    content: "|";
-    color: var(--color-2);
-    margin: 3vw;
-    font-size: 1.5vw;
-}*/
-
-
-/*
-.filternav {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 3vw 3vw;
-    margin: auto;
-    width: 50%;
-}
-
-.filternav li {
-    display: inline;
-}
-
-
-.white_filter, .red_filter, .rose_filter {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-*/
 
 .whitefilter_dot, .redfilter_dot, .rosefilter_dot{
     height: 2vw;
