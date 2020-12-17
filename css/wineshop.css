@@ -241,3 +241,7 @@ main {
     align-items: center;
     padding-top: 2vw;
 }
+
+.productlist_shortdescription {
+    text-align: center;
+}
