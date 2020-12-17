@@ -236,6 +236,7 @@ nav a {
     font-family: var(--secondary-font);
     color: var(--color-2);
     margin-bottom: 4vw;
+    font-size: 2vw;
 }
 
 .why_moldova_text p {
@@ -254,7 +255,7 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     align-items: center;
 
 
@@ -263,7 +264,7 @@ nav a {
 .icon {
     display: flex;
     height: auto;
-    width: 10vw;
+    width: 7vw;
     margin:0 auto;
 
 }
@@ -282,12 +283,12 @@ nav a {
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 2vw;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
 }
 
 .icon_des {
     font-weight: 300;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
 
 }
 
@@ -326,12 +327,13 @@ nav a {
     font-family: var(--secondary-font);
     color: var(--color-2);
     margin-bottom: 4vw;
+    font-size: 2vw;
 }
 
 .about_us_text p {
     font-family: var(--primary-font);
     font-weight: 300;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     line-height: 1.6;
     margin-bottom: 3vw;
 }
@@ -376,7 +378,7 @@ nav a {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     margin-left: 5vw;
 }
 
@@ -392,12 +394,13 @@ nav a {
     font-family: var(--secondary-font);
     color: var(--color-2);
     margin-bottom: 4vw;
+     font-size: 2vw;
 }
 
 .our_treasure_text p {
     font-family: var(--primary-font);
     font-weight: 300;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     line-height: 1.6;
     margin-bottom: 3vw;
 }
@@ -445,12 +448,13 @@ nav a {
     font-family: var(--secondary-font);
     color: var(--color-2);
     margin-bottom: 3vw;
+    font-size: 2vw;
 }
 
 .winetastic_exp_text P {
     font-family: var(--primary-font);
     font-weight: 300;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     line-height: 1.6;
     margin-bottom: 3vw;
 }
