@@ -14,6 +14,8 @@
     --color-3: #e6e6e6;
     --color-4: #ffffff;
     --color-5: #ba2424;
+    --color-6: #E5D290;
+    --color-7: #D3999F;
 
 
     --primary-font: 'Lato', sans-serif;
@@ -88,9 +90,29 @@ h1{
 }
 
 
+h2 {
+    font-family: var(--secondary-font);
+    padding-bottom: 3vw;
+    font-size: 3vw;
+}
+
+h3 {
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    color: #B2B2B2;
+    font-weight: 300;
+}
+
+.intro {
+    text-align: center;
+    padding-bottom: 5vw;
+    padding: 0vw 8vw 5vw 8vw;
+}
+
+
 /* IMAGE STYLING */
 
-.bannerevents {
+.bannerwineshop {
     background-image: url(../images/photos/wineshop/bgimage_wineshop.png);
     background-size: contain;
     height: 48vw;
@@ -98,4 +120,84 @@ h1{
     margin-bottom: 4vw;
     display: flex;
     justify-content: center;
+    background-repeat: no-repeat;
+}
+
+
+/* FILTERS STYLING */
+
+
+.filterwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0vw 25vw 2vw;
+}
+
+.allwines_filter, .white_filter, .red_filter, .rose_filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.allwines_filter{
+    padding: 0vw 5vw;
+    line-height: 2.5vw;
+    text-align: center;
+}
+
+.filternav a {
+    text-decoration: none;
+    font-family: var(--primary-font);
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+/*.filternav li + li::before {
+    content: "|";
+    color: var(--color-2);
+    margin: 3vw;
+    font-size: 1.5vw;
+}*/
+
+
+/*
+.filternav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+    margin: auto;
+    width: 50%;
+}
+
+.filternav li {
+    display: inline;
+}
+
+
+.white_filter, .red_filter, .rose_filter {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+*/
+
+.whitefilter_dot, .redfilter_dot, .rosefilter_dot{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 2vw;
+    margin-bottom: 0.8vw;
+}
+
+.whitefilter_dot {
+    background-color: var(--color-6);
+}
+
+.redfilter_dot {
+    background-color: var(--color-5);
+}
+
+.rosefilter_dot {
+    background-color: var(--color-7);
 }
