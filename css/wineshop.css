@@ -22,6 +22,15 @@
     --white-space: 1rem;
 }
 
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAV STYLING */
+
 nav {
     display: grid;
     justify-content: space-between;
@@ -55,10 +64,38 @@ nav a {
     color: var(--color-4);
 }
 
-
 .logo {
     width: 100%;
     height: auto;
     padding-left: 5vw;
     padding-top: 1vw;
+}
+
+
+/* TEXT STYLING */
+
+p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+}
+
+
+h1{
+    align-self: center;
+    color: white;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+
+
+/* IMAGE STYLING */
+
+.bannerevents {
+    background-image: url(../images/photos/wineshop/bgimage_wineshop.png);
+    background-size: contain;
+    height: 48vw;
+    width: 100vw;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: center;
 }
