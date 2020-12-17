@@ -257,14 +257,14 @@ nav a {
     grid-gap: 2rem;
     align-items: center;
 
+
 }
 
 .icon {
     display: flex;
-    justify-content: center;
     height: auto;
-    width: 100%;
-    vertical-align: top;
+    width: 10vw;
+    margin:0 auto;
 
 }
 
