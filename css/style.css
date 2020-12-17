@@ -14,6 +14,7 @@
     --color-3: #e6e6e6;
     --color-4: #ffffff;
     --color-5: #ba2424;
+    --color-6: #B2B2B2;
 
 
     --primary-font: 'Lato', sans-serif;
@@ -80,7 +81,7 @@ nav a {
     margin: auto;
 }
 
-#free_shipping{
+#free_shipping {
     margin-left: 7.3vw;
 }
 
@@ -116,12 +117,443 @@ nav a {
 
 .video_title {
     position: absolute;
-    top: 38vw;;
+    top: 38vw;
     left: 10vw;
     right: 50vw;
     z-index: 1;
     color: white;
     font-family: var(--primary-font);
-    font-weight: 100;
-    font-size: 1vw;
+    font-weight: 300;
+    font-size: 1.5vw;
 }
+
+.xmas_offer {
+    position: relative;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+
+.xmas_offer_background {
+    height: auto;
+    width: 100%;
+    z-index: 0;
+    background-size: cover;
+    display: flex;
+
+}
+
+.wine_offer {
+    position: absolute;
+    height: auto;
+    width: 20vw;
+    top: -3.2vw;
+    right: 20vw;
+}
+
+.xmas_text {
+    position: absolute;
+    top: 10vw;
+    left: 15vw;
+    text-align: center;
+    width: 30vw;
+}
+
+.xmas_text h1 {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    color: var(--color-4);
+    font-size: 2.4vw;
+    margin-bottom: 2vw;
+}
+
+.xmas_text h2 {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    color: var(--color-4);
+    font-size: 2vw;
+    margin-bottom: 4.5vw;
+}
+
+.xmas_text p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    color: var(--color-4);
+    font-size: 1.4vw;
+    margin-bottom: 2vw;
+}
+
+.xmas_text button {
+    border: none;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    background-color: var(--color-5);
+    color: var(--color-4);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.xmas_text button:hover {
+    opacity: 0.8
+}
+
+.why_moldova {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+}
+
+.moldova_map {
+    height: auto;
+    width: 40vw;
+    grid-area: 1;
+}
+
+.why_moldova_text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.why_moldova_text h3 {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.1vw;
+    color: var(--color-6);
+    margin-bottom: 0.3vw;
+
+}
+
+.why_moldova_text h1 {
+    font-family: var(--secondary-font);
+    color: var(--color-2);
+    margin-bottom: 4vw;
+}
+
+.why_moldova_text p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.2vw;
+    line-height: 1.6;
+}
+
+.icons_overview {
+    margin: 5vw;
+}
+.wrapper {
+    padding: 5vw;
+    background: var(--color-2);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    vertical-align: top;
+
+}
+
+.icon_text {
+    text-align: center;
+    color: var(--color-4);
+    font-family: var(--primary-font);
+    align-content: center;
+    padding-top: 2vw;
+
+
+}
+
+.icon_title {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+    font-size: 1.7vw;
+}
+
+.icon_des {
+    font-weight: 300;
+    font-size: 1.3vw;
+
+}
+
+.about_us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5vw;
+    display: flex;
+    grid-gap: 4vw;
+
+}
+
+.about_us_img {
+    height: auto;
+    width: 40vw;
+    margin-left: 4vw;
+
+}
+
+.about_us_text {
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.about_us_text h3 {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.1vw;
+    color: var(--color-6);
+    margin-bottom: 0.3vw;
+}
+
+.about_us_text h1 {
+    font-family: var(--secondary-font);
+    color: var(--color-2);
+    margin-bottom: 4vw;
+}
+
+.about_us_text p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.4vw;
+    line-height: 1.6;
+    margin-bottom: 3vw;
+}
+
+.about_us_text button {
+    width: 19vw;
+    border: none;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    background-color: var(--color-5);
+    color: var(--color-4);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.about_us_text button:hover {
+    opacity: 0.8
+}
+
+.our_treasure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    display: flex;
+    grid-gap: 4vw;
+    flex-direction: row-reverse;
+    background: var(--color-3);
+}
+
+.our_treasure_img {
+    height: auto;
+    width: 48vw;
+    margin-left: 4vw;
+}
+
+.our_treasure_text {
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    margin-left: 5vw;
+}
+
+.our_treasure_text h3 {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.1vw;
+    color: var(--color-6);
+    margin-bottom: 0.3vw;
+}
+
+.our_treasure_text h1 {
+    font-family: var(--secondary-font);
+    color: var(--color-2);
+    margin-bottom: 4vw;
+}
+
+.our_treasure_text p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.4vw;
+    line-height: 1.6;
+    margin-bottom: 3vw;
+}
+
+.our_treasure_text button {
+    width: 19vw;
+    border: none;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    background-color: var(--color-5);
+    color: var(--color-4);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.our_treasure_text button:hover {
+    opacity: 0.8
+}
+
+.winetastic_exp {
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.winetastic_exp_text {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+}
+
+.winetastic_exp_text h3 {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.1vw;
+    color: var(--color-6);
+    margin-bottom: 1.5vw;
+}
+
+.winetastic_exp_text h1 {
+    font-family: var(--secondary-font);
+    color: var(--color-2);
+    margin-bottom: 3vw;
+}
+
+.winetastic_exp_text P {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.4vw;
+    line-height: 1.6;
+    margin-bottom: 3vw;
+}
+
+.eventimages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 3rem
+}
+
+.publiceventsimg {
+    background-image: url(../images/photos/events/publicevents.png);
+    background-size: cover;
+    width: 25rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.privateeventsimg {
+    background-image: url(../images/photos/events/private%20events.png);
+    background-size: cover;
+    width: 25rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.eventimages button {
+    background-color: var(--color-5);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 1.3vw 2vw;
+    width: fit-content;
+    color: var(--color-4);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    opacity: 1;
+    border-radius: 0.3vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer {
+   background-color: var(--color-2);
+}
+
+.footergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 7vw;
+    margin-top: 1vw;
+    color: white;
+    font-family: var(--primary-font);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1vw;
+    font-weight: 300;
+    line-height: 1.6;
+
+}
+
+.logowhite {
+    margin-top: 2vw;
+    margin-left: 5vw;
+    height: auto;
+    width: 10vw;
+}
+
+.ftitle_style {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: var(--color-5);
+    margin-bottom: 0.4vw;
+    font-size: 1.2vw;
+}
+
+.stay_connected button {
+    width: 19vw;
+    border: none;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    background-color: var(--color-5);
+    color: var(--color-4);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 1vw;
+}
+
+
+.copyright {
+    text-align: center;
+    margin-top: 4vw;
+    font-family: var(--primary-font);
+    font-size: 1vw;
+    font-weight: 300;
+    color: white;
+}
+
