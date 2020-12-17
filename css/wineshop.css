@@ -152,7 +152,7 @@ h5 {
 img {
     max-width: 100%;
     height: auto;
-    padding: 0vw 7vw;
+    padding: 0vw 4vw;
 }
 
 
@@ -161,7 +161,7 @@ img {
 .filterwrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 0vw 25vw 2vw;
+    padding: 0vw 25vw;
 }
 
 .allwines_filter, .white_filter, .red_filter, .rose_filter {
@@ -220,7 +220,7 @@ img {
 main {
     display: grid;
     max-width: 1200px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     /*grid-gap: 10px;*/
     margin-bottom: 40px;
     padding: 8vw;
@@ -229,7 +229,7 @@ main {
 .productlist {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     padding: 2vw 2vw;
     border: solid .005vw var(--color-3);
