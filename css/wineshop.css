@@ -16,6 +16,9 @@
     --color-5: #ba2424;
     --color-6: #E5D290;
     --color-7: #D3999F;
+    --color-8: #B2B2B2;
+
+
 
 
     --primary-font: 'Lato', sans-serif;
@@ -108,6 +111,30 @@ h3 {
     padding: 0vw 8vw 5vw 8vw;
 }
 
+h4 {
+    font-family: var(--primary-font);
+    padding-bottom: 0.5vw;
+    font-size: 2vw;
+    color: var(--color-2);
+}
+
+h5 {
+    font-family: var(--primary-font);
+    padding-bottom: 2vw;
+    font-size: 1.5vw;
+    color: var(--color-8);
+    text-transform: uppercase;
+    font-weight:300;
+}
+
+.productlist_price {
+    font-family: var(--secondary-font);
+    padding-top: 2vw;
+    font-size: 2vw;
+    color: var(--color-5);
+    font-weight: bolder;
+}
+
 
 /* IMAGE STYLING */
 
@@ -120,6 +147,12 @@ h3 {
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 0vw 7vw;
 }
 
 
@@ -141,6 +174,10 @@ h3 {
     padding: 0vw 5vw;
     line-height: 2.5vw;
     text-align: center;
+}
+
+.white_filter, .red_filter, .rose_filter {
+    border-left: solid 0.1vw var(--color-8);
 }
 
 .filternav a {
@@ -167,4 +204,44 @@ h3 {
 
 .rosefilter_dot {
     background-color: var(--color-7);
+}
+
+
+/* PRODUCT LIST STYLING */
+
+/*.productlist section {
+    grid-gap: 2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    padding: 0 5vw;
+}*/
+
+
+main {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /*grid-gap: 10px;*/
+    margin-bottom: 40px;
+    padding: 8vw;
+}
+
+.productlist {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    padding: 2vw 2vw;
+    border: solid .005vw var(--color-3);
+}
+
+.productlist_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vw;
+}
+
+.productlist_shortdescription {
+    text-align: center;
 }
