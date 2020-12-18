@@ -1,4 +1,4 @@
-fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine")
+fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=100")
     .then(initial => initial.json())
     .then(callback);
 
@@ -38,6 +38,7 @@ function showProduct(product) {
 
     /*clone.querySelector(".productlist_price").textContent = "$" + post.price;*/
     /*clone.querySelector(".productlist_image").src = wine._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;*/
+    //clone.querySelector(".productlist_image").src = product._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
 
     /*copy.querySelector(".content").innerHTML = post.content.rendered;*/
 
