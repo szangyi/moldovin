@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+:root {
+    --color-1: #000000;
+    --color-2: #404040;
+    --color-3: #e6e6e6;
+    --color-4: #ffffff;
+    --color-5: #ba2424;
+    --color-6: #B2B2B2;
+
+
+    --primary-font: 'Lato', sans-serif;
+    --secondary-font: 'Cinzel', sans-serif;
+
+    --white-space: 1rem;
+}
+
+nav {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 3fr;
+    background: var(--color-2);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: var(--color-4);
+
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    color: var(--color-4);
+
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-4);
+}
+
+
+.logo {
+    width: 100%;
+    height: auto;
+    padding-left: 5vw;
+    padding-top: 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer {
+    background-color: var(--color-2);
+}
+
+.footergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 7vw;
+    margin-top: 1vw;
+    color: white;
+    font-family: var(--primary-font);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1vw;
+    font-weight: 300;
+    line-height: 1.6;
+
+}
+
+.logowhite {
+    margin-top: 2vw;
+    margin-left: 5vw;
+    height: auto;
+    width: 10vw;
+}
+
+.ftitle_style {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: var(--color-5);
+    margin-bottom: 0.4vw;
+    font-size: 1.2vw;
+}
+
+.stay_connected button {
+    width: 19vw;
+    border: none;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    background-color: var(--color-5);
+    color: var(--color-4);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 1vw;
+}
+
+
+.copyright {
+    text-align: center;
+    margin-top: 3vw;
+    font-family: var(--primary-font);
+    font-size: 1vw;
+    font-weight: 300;
+    color: white;
+    background-color: var(--color-2);
+    padding-bottom: 2vw;
+}
