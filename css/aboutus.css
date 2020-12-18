@@ -164,14 +164,80 @@ nav a {
     margin-bottom: 3vw;
 }
 
+.wrapper {
+    padding: 5vw;
+    background: var(--color-4);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.member {
+    display: flex;
+    height: auto;
+    width: 17vw;
+    margin: 0 auto;
+    margin-bottom: 2vw;
+}
+
+.member_title {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 1.4vw;
+    margin-bottom: 0.6vw;
+}
+
+.member_text {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+
+.meet_family {
+    text-align: center;
+    margin: 5vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.meet_family_text h3 {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.1vw;
+    color: var(--color-6);
+    margin-bottom: 1.5vw;
+}
+
+.meet_family_text h1 {
+    font-family: var(--secondary-font);
+    color: var(--color-2);
+    margin-bottom: 3vw;
+    font-size: 2vw;
+}
 
 
+.meet_family_text p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.2vw;
+    line-height: 1.6;
+    margin-bottom: 3vw;
+}
 
+.our_mission {
+    text-align: center;
+    margin-top: 5vw;
+    background: var(--color-2);
+}
 
-
-
-
-
+.our_mission_text {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 4vw;
+    padding-bottom: 6vw;
+}
 
 
 
