@@ -328,13 +328,13 @@ nav a {
 .company_box,
 .phone_box {
     height: 4vw;
-    border: 1px solid var(--color-2);
+    border: 1px solid var(--color-3);
     border-radius: 0.3vw;
 }
 
 .message_box {
     height: 12vw;
-    border: 1px solid var(--color-2);
+    border: 1px solid var(--color-3);
 }
 
 .button_send_container {
@@ -539,6 +539,63 @@ footer {
         font-size: 2vw;
     }
 
+    .our_mission_text h3 {
+        font-size: 2.5vw;
+    }
 
+    .our_mission_text h1 {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    .our_mission_text p {
+        font-size: 2.6vw;
+        margin-bottom: 2vw;
+    }
+
+    .our_mission_text {
+        padding-left: 15vw;
+        padding-right: 15vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
+
+    .wrapper_contactus p {
+        font-size: 2.6vw;
+    }
+
+    .button_send {
+        font-size: 2vw;
+    }
+
+    .our_partners {
+        display: none;
+}
+
+    .footergrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.8fr 1fr;
+        font-size: 3vw;
+        font-weight: 300;
+        line-height: 1.6;
+        margin-bottom: 6vw;
+    }
+
+    .logowhite {
+        width: 30vw;
+    }
+
+    .footer_3 {
+        display: none;
+    }
+
+    .ftitle_style {
+        font-size: 4vw;
+    }
+
+    .copyright {
+        font-size: 3vw;
+    }
 
 }
