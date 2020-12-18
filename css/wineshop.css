@@ -116,6 +116,7 @@ h4 {
     padding-bottom: 0.5vw;
     font-size: 2vw;
     color: var(--color-2);
+    text-align: center;
 }
 
 h5 {
@@ -127,7 +128,7 @@ h5 {
     font-weight:300;
 }
 
-.productlist_price {
+.productlist_price, .proce {
     font-family: var(--secondary-font);
     padding-top: 2vw;
     font-size: 2vw;
