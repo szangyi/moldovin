@@ -58,23 +58,26 @@
 
 
 
+//http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?_embed"
+
+/*
 window.addEventListener('DOMContentLoaded', getData);
 
-const datalink = "http://efcreations.es/t9w1/wp-json/wp/v2/change?_embed";
+const datalink = "http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?_embed";
 
 function getData() {
 //    getNav()
     const urlParams = new URLSearchParams(window.location.search);
     console.log("URLSearchParams " + window.location);
-    const the_change_id = urlParams.get("change_id"); //getting the id from the URL
-    console.log(the_change_id);
+    const the_wine_id = urlParams.get("wine_id"); //getting the id from the URL
+    console.log(the_wine_id);
 
     //routing in the script
-    if (the_change_id) {
-        fetch("http://efcreations.es/t9w1/wp-json/wp/v2/change/" + the_change_id + "?_embed")
+    if (the_wine_id) {
+        fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine/" + the_wine_id + "?_embed")
             .then(res => res.json())
-            .then(showChange) //skipping the forEach loop
-    } else if (!the_change_id && window.location.pathname == "/singlechange.html") {
+            .then(showWine) //skipping the forEach loop
+    } else if (!the_wine_id && window.location.pathname == "/product.html") {
         window.location.replace("index.html");
     } else {
         fetch(datalink)
@@ -86,34 +89,60 @@ function getData() {
 
 function handleData(data) {
     //console.log(data);
-    data.forEach(showChange);
+    data.forEach(showWine);
 }
 
 
-function showChange(change) {
-//    console.log(change)
-    console.log(change.short_description)
-    const template = document.querySelector("template").content;
+function showWine(wine) {
+//    console.log(wine)
+    console.log(wine.short_description)
+    const template = document.querySelector("#product_template").content;
     const copy = template.cloneNode(true);
-    console.log(change._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url)
+    console.log(wine._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url)
 
-    copy.querySelector(".title").textContent = change.title.rendered;
-    copy.querySelector(".title2").textContent = change.title.rendered;
-    copy.querySelector(".shortdescription").textContent = change.short_description;
-    copy.querySelector(".product_image").src = change._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
+    copy.querySelector(".productlist_title").textContent = wine.title.rendered;
+    copy.querySelector(".productlist_winery").textContent = wine.title.rendered;
+    copy.querySelector(".shortdescription").textContent = wine.short_description;
+    copy.querySelector(".product_image").src = wine._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
 
     const a = copy.querySelector('a');
     if (a) {
-        a.href += change.id;
+        a.href += wine.id;
     }
 
 
     const divChangeLongDescription = copy.querySelector('.longdescription');
     if (divChangeLongDescription) {
-        divChangeLongDescription.innerHTML = change.content.rendered;
+        divChangeLongDescription.innerHTML = wine.content.rendered;
     }
 
     document.querySelector("main").appendChild(copy);
 }
+*/
 
 
+
+fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine")
+    .then(initial => initial.json())
+    .then(callback);
+
+function callback(data) {
+    console.log(data)
+    data.forEach(showWine)
+}
+
+function showWine(wine) {
+    console.log(wine)
+    const template = document.querySelector("#product_template").content;
+    const clone = template.cloneNode(true);
+
+
+    clone.querySelector(".productlist_title").textContent = wine.title.rendered;
+    clone.querySelector(".productlist_winery").textContent = wine.winery;
+    clone.querySelector(".productlist_description").textContent = wine.excerpt.rendered;
+    /*clone.querySelector(".productlist_image").src = wine._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;*/
+
+    /*copy.querySelector(".content").innerHTML = post.content.rendered;*/
+
+    document.querySelector("main").appendChild(clone);
+}
