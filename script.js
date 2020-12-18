@@ -21,8 +21,22 @@ function showProduct(product) {
     clone.querySelector(".productlist_description").textContent = product.excerpt.rendered;
     clone.querySelector(".productlist_price").textContent = product.price + " DKK";
 
+    const a = clone.querySelector('a');
+    a.href += product.id;
+
     document.querySelector("main").appendChild(clone);
 }
+
+
+
+
+
+
+    //const a = copy.querySelector('a');
+    //if (a) {
+    //    a.href += change.id;
+    //}
+
 
 
 
