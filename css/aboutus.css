@@ -235,19 +235,131 @@ nav a {
 .our_mission_text {
     padding-left: 20vw;
     padding-right: 20vw;
-    padding-top: 4vw;
-    padding-bottom: 6vw;
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+}
+
+.our_mission_text h3 {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.1vw;
+    color: var(--color-6);
+    margin-bottom: 1.5vw;
+}
+
+.our_mission_text h1 {
+    font-family: var(--secondary-font);
+    color: var(--color-4);
+    margin-bottom: 3vw;
+    font-size: 2vw;
+}
+
+.our_mission_text p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.2vw;
+    line-height: 1.6;
+    margin-bottom: 3vw;
+    color: var(--color-4);
+
+}
+
+.wrapper_contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw 3vw;
+    grid-template-rows: 1fr 1fr 2fr 0.7fr;
+    grid-template-areas:
+        "name email"
+        "company phone"
+        "message message"
+        "button_send_container button_send_container";
+}
+
+.center {
+    text-align: center;
+    margin: 6vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.center h5 {
+    font-family: var(--secondary-font);
+    color: var(--color-2);
+    margin-bottom: 4vw;
+    margin-top: 5vw;
+    font-size: 3vw;
+}
+.wrapper_contactus p {
+    text-align: left;
+    padding-bottom: 1vw;
+    font-family: var(--primary-font);
+    font-weight: 300;
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.company {
+    grid-area: company;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.message {
+    grid-area: message;
+}
+
+.button_send_container {
+    grid-area: button_send_container;
+    background-color:
+}
+
+
+.name_box,
+.email_box,
+.company_box,
+.phone_box {
+    height: 4vw;
+    border: 1px solid var(--color-2);
+    border-radius: 0.3vw;
+}
+
+.message_box {
+    height: 12vw;
+    border: 1px solid var(--color-2);
+}
+
+.button_send_container {
+    display: flex;
+
+}
+
+.button_send {
+    flex-grow: 1;
+    padding: 0;
+    background-color:  var(--color-5);
+    border: none;
+    border-radius: 0.3vw;
+    color: var(--color-4);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1.3vw;
 }
 
 
 
-
-
-
-
-
-
-/*footer {
+footer {
     background-color: var(--color-2);
 }
 
