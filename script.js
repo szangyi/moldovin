@@ -1,10 +1,35 @@
 window.addEventListener('DOMContentLoaded', getData);
 
-function getData(){
-fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=100")
-    .then(initial => initial.json())
-    .then(handleData);
+const datalink = "http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=100";
+
+/*function getData() {
+    fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=100")
+        .then(initial => initial.json())
+        .then(handleData);
+}*/
+
+
+function getData() {
+    //getNav()
+    const urlParams = new URLSearchParams(window.location.search);
+    console.log("URLSearchParams " + window.location);
+    const the_product_id = urlParams.get("product_id"); //getting the id from the URL
+    console.log(the_product_id);
+
+    //routing in the script
+    if (the_product_id) {
+        fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine/" + the_product_id + "?_embed")
+            .then(res => res.json())
+            .then(showProduct) //skipping the forEach loop
+    } else if (!the_product_id && window.location.pathname == "/product.html") {
+        window.location.replace("wineshop.html");
+    } else {
+        fetch(datalink)
+            .then(res => res.json())
+            .then(handleData)
+    }
 }
+
 
 function handleData(posts) {
     console.log(posts)
@@ -12,7 +37,7 @@ function handleData(posts) {
 }
 
 function showProduct(product) {
-    console.log(product)
+    //console.log(product)
     const template = document.querySelector("#product_template").content;
     const clone = template.cloneNode(true);
 
@@ -22,7 +47,14 @@ function showProduct(product) {
     clone.querySelector(".productlist_price").textContent = product.price + " DKK";
 
     const a = clone.querySelector('a');
-    a.href += product.id;
+    if (a) {
+        a.href += product.id;
+    }
+
+    /*const divProductDescription = copy.querySelector('.productlist_description');
+    if (divProductDescription) {
+        divProductDescription.innerHTML = product.excerpt.rendered;
+    }*/
 
     document.querySelector("main").appendChild(clone);
 }
@@ -32,10 +64,10 @@ function showProduct(product) {
 
 
 
-    //const a = copy.querySelector('a');
-    //if (a) {
-    //    a.href += change.id;
-    //}
+//const a = copy.querySelector('a');
+//if (a) {
+//    a.href += change.id;
+//}
 
 
 
@@ -45,20 +77,11 @@ function showProduct(product) {
 
 
 
+/*clone.querySelector(".productlist_price").textContent = "$" + post.price;*/
+/*clone.querySelector(".productlist_image").src = wine._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;*/
+//clone.querySelector(".productlist_image").src = product._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
 
-
-
-
-
-
-
-
-
-    /*clone.querySelector(".productlist_price").textContent = "$" + post.price;*/
-    /*clone.querySelector(".productlist_image").src = wine._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;*/
-    //clone.querySelector(".productlist_image").src = product._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
-
-    /*copy.querySelector(".content").innerHTML = post.content.rendered;*/
+/*copy.querySelector(".content").innerHTML = post.content.rendered;*/
 
 
 //window.addEventListener('DOMContentLoaded', getData);
@@ -182,5 +205,3 @@ function showWine(wine) {
     document.querySelector("main").appendChild(copy);
 }
 */
-
-
