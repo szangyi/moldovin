@@ -55,7 +55,51 @@ h3 {
     font-weight: 300;
 }
 
-.bannerevents {
+/* NAV STYLING */
+
+nav {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 3fr;
+    background: var(--color-2);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: var(--color-4);
+
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    color: var(--color-4);
+
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-4);
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    padding-left: 5vw;
+    padding-top: 1vw;
+}
+
+
+
+.banner_events {
     background-image: url(../images/photos/events/bgimage_events.png);
     background-size: contain;
     height: 48vw;
@@ -66,8 +110,19 @@ h3 {
 
 }
 
-.bannerpublicevents {
+.banner_publicevents {
     background-image: url(../images/photos/events/bgimage_eventspublic.png);
+    background-size: contain;
+    height: 48vw;
+    width: 100vw;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner_privateevents {
+    background-image: url(../images/photos/events/bgimage_eventsprivate.png);
     background-size: contain;
     height: 48vw;
     width: 100vw;
@@ -148,11 +203,29 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.gap1 {
+    grid-gap: 4vw;
+}
+
 .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center
+}
+
+.grey {
+    background-color: var(--color-2);
+    color: white;
+    padding: 2vw 3vw;
+    width: 24vw;
+    height: 24vw;
+    display: flex;
+    justify-content: space-between
+}
+
+.people_icon {
+    width: 8vw;
 }
 
 .testimonial,
@@ -165,7 +238,7 @@ button {
 .wrapper2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3vw
+    /*    grid-gap: 3vw*/
 }
 
 .event1image {
@@ -182,6 +255,20 @@ button {
     height: 30rem;
 }
 
+.privateeventimage1 {
+    background-image: url(../images/photos/events/ouroffer.png);
+    background-size: cover;
+    width: auto;
+    height: 30rem;
+}
+
+.privateeventimage2 {
+    background-image: url(../images/photos/events/tasting.png);
+    background-size: cover;
+    width: auto;
+    height: 30rem;
+}
+
 .event {
     background-color: var(--color-3);
     margin: 8vw 0;
@@ -189,6 +276,11 @@ button {
 
 .center {
     text-align: center;
+}
+
+.center_horizontal {
+    display: flex;
+    align-items: center;
 }
 
 .textbox {
@@ -261,4 +353,66 @@ li {
 .test_person {
     position: relative;
     top: -2vw
+}
+
+.wrapper_contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw 3vw;
+    grid-template-rows: 1fr 1fr 2fr 0.7fr;
+    grid-template-areas:
+        "name email"
+        "company phone"
+        "message message"
+        "button_send_container button_send_container";
+}
+
+.wrapper_contactus p {
+    text-align: left
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.company {
+    grid-area: company;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.message {
+    grid-area: message;
+}
+
+.button_send_container {
+    grid-area: button_send_container;
+}
+
+.name_box,
+.email_box,
+.company_box,
+.phone_box {
+    height: 4vw;
+    border: 1px solid var(--color-2);
+}
+
+.message_box {
+    height: 12vw;
+    border: 1px solid var(--color-2);
+}
+
+.button_send_container {
+    display: flex;
+}
+
+.button_send {
+    flex-grow: 1;
+    padding: 0;
 }
