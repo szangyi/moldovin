@@ -419,3 +419,70 @@ footer {
     background-color: var(--color-2);
     padding-bottom: 2vw;
 }
+
+@media only screen and (max-width: 500px) {
+
+
+    header nav {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    header nav ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2.3vw;
+        margin-bottom: 1vw;
+    }
+
+    .logo {
+        display: flex;
+        width: 50%;
+        height: auto;
+        margin: 0 40% 0% 25%;
+    }
+
+    .we_connection_text h3 {
+        font-size: 2.5vw;
+    }
+
+    .we_connection_text h1 {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    .we_connection_text p {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+
+    }
+
+    .the_beginnings {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+
+    .the_beginnings_img {
+        height: auto;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 4vw;
+    }
+
+    .our_beginnings_text {
+        text-align: center;
+        display: flex;
+        margin-top: 5vw;
+    }
+
+
+
+
+
+
+
+
+}
