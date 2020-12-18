@@ -1,10 +1,14 @@
+window.addEventListener('DOMContentLoaded', getData);
+
+function getData(){
 fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=100")
     .then(initial => initial.json())
-    .then(callback);
+    .then(handleData);
+}
 
-function callback(data) {
-    console.log(data)
-    data.forEach(showProduct)
+function handleData(posts) {
+    console.log(posts)
+    posts.forEach(showProduct)
 }
 
 function showProduct(product) {
