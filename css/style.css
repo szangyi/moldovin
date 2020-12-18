@@ -616,8 +616,6 @@ footer {
         flex-wrap: wrap;
         justify-content: space-around;
         flex-direction: column-reverse;
-
-
     }
 
     .moldova_map {
@@ -648,7 +646,173 @@ footer {
         margin-bottom: 2vw;
     }
 
+    .icon_des {
+        visibility: hidden;
+    }
+
+    .icon {
+        width: 10vw;
+        text-align: center;
+    }
+
+    .wrapper {
+        grid-gap: 1rem;
+    }
+
+    .icon_title {
+        font-size: 2vw;
+    }
+
+    .about_us {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        margin-top: 8vw;
+    }
+
+    .about_us_img {
+        height: auto;
+        width: 80vw;
+        margin: 0;
+        margin-top: 6vw;
+        margin-left: 5vw;
+    }
+
+    .about_us_text {
+        text-align: center;
+    }
+
+    .about_us_text h3 {
+        font-size: 2.5vw;
+    }
+
+    .about_us_text h1 {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    .about_us_text p {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .about_us_text button {
+        align-self: center;
+        font-size: 2.3vw;
+        width: 30vw;
+        padding: 2.5vw;
+        margin-top: 1vw;
+    }
+
+    .our_treasure {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        margin-top: 8vw;
+        text-align: center;
+        padding-top: 3vw;
+    }
+
+    .our_treasure_text h3 {
+        font-size: 2.5vw;
+    }
+
+    .our_treasure_text h1 {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    .our_treasure_text p {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .our_treasure_text button {
+        align-self: center;
+        font-size: 2.3vw;
+        width: 30vw;
+        padding: 2.5vw;
+        margin-top: 1vw;
+    }
+
+    .img_treasure_back {
+        background: white;
+    }
+
+    .our_treasure_img {
+        height: auto;
+        width: 80vw;
+        margin: 0;
+        margin-top: 6vw;
+        margin-left: 5vw;
+    }
+
+    .winetastic_exp_text h3 {
+        font-size: 2.5vw;
+    }
+
+    .winetastic_exp_text h1 {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    .winetastic_exp_text p {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .eventimages {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 2vw;
+    }
+
+    .publiceventsimg {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .privateeventsimg {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .eventimages button {
+        font-size: 2vw;
+    }
 
 
+     .our_partners {
+        display: none;
+}
+
+    .footergrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.8fr 1fr;
+        font-size: 3vw;
+        font-weight: 300;
+        line-height: 1.6;
+        margin-bottom: 6vw;
+    }
+
+    .logowhite {
+        width: 30vw;
+    }
+
+    .footer_3 {
+        display: none;
+    }
+
+    .ftitle_style {
+        font-size: 4vw;
+    }
+
+    .copyright {
+        font-size: 3vw;
+    }
 
 }
+
