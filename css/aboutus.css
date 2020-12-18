@@ -64,9 +64,105 @@ nav a {
     padding-top: 1vw;
 }
 
+.banner_about {
+    background-image: url(../images/photos/aboutus/bgimage_aboutus.png);
+    background-size: contain;
+    height: 48vw;
+    width: 100vw;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner_about h1 {
+    align-self: center;
+    color: white;
+    font-family: var(--secondary-font);
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.we_connection {
+    text-align: center;
+    margin: 5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.we_connection_text h3{
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.1vw;
+    color: var(--color-6);
+    margin-bottom: 1.5vw;
+}
+
+.we_connection_text h1 {
+    font-family: var(--secondary-font);
+    color: var(--color-2);
+    margin-bottom: 3vw;
+    font-size: 2vw;
+}
 
 
+.we_connection_text p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.3vw;
+    line-height: 1.6;
+    margin-bottom: 3vw;
+}
 
+.the_beginnings {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    display: flex;
+    grid-gap: 4vw;
+    flex-direction: row-reverse;
+    background: var(--color-3);
+
+}
+
+.our_beginnings_text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5vw;
+}
+
+.the_beginnings_img {
+    height: auto;
+    width: 48vw;
+    margin-left: 4vw;
+}
+
+.our_beginnings_text h3 {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.1vw;
+    color: var(--color-6);
+    margin-bottom: 0.3vw;
+}
+
+.our_beginnings_text h1 {
+    font-family: var(--secondary-font);
+    color: var(--color-2);
+    margin-bottom: 4vw;
+    font-size: 2vw;
+}
+
+.our_beginnings_text p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.2vw;
+    line-height: 1.6;
+    margin-bottom: 3vw;
+}
 
 
 
