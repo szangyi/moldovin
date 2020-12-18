@@ -478,10 +478,66 @@ footer {
         margin-top: 5vw;
     }
 
+    .our_beginnings_text h3 {
+        font-size: 2.5vw;
+    }
 
+    .our_beginnings_text h1 {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
 
+    .our_beginnings_text p {
+         font-size: 3vw;
+        margin-bottom: 2vw;
+    }
 
+    .box {
+        width: 40vw;
+        text-align: center;
+        align-self: center;
+    }
 
+    .wrapper {
+    padding: 10vw;
+    background: var(--color-4);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+    .member {
+        align-self: center;
+        width: 30vw;
+    }
+
+    .meet_family {
+        margin: 3vw;
+    }
+    .meet_family_text h3 {
+        font-size: 2.5vw;
+    }
+
+    .meet_family_text h1 {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    .meet_family_text p {
+         font-size: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .member_title {
+        font-size: 2.4vw;
+    }
+
+    .member_text {
+        font-size: 2vw;
+    }
 
 
 
