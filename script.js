@@ -51,14 +51,14 @@ function showProduct(product) {
         a.href += product.id;
     }
 
-    /*const divProductDescription = copy.querySelector('.productlist_description');
-    if (divProductDescription) {
-        divProductDescription.innerHTML = product.excerpt.rendered;
+    /*const divProductShortDescription = copy.querySelector('.product_shortdescription');
+    if (divProductShortDescription) {
+        divProductShortDescription.innerHTML = product.excerpt.rendered;
     }*/
 
-    /*const divProductLongDescription = copy.querySelector('.productlist_description');
+    /*const divProductLongDescription = copy.querySelector('.product_longdescription');
     if (divProductLongDescription) {
-        divProductLongDescription.innerHTML = product.excerpt.rendered;
+        divProductLongDescription.innerHTML = product.content.rendered;
     }*/
 
     document.querySelector("main").appendChild(clone);
