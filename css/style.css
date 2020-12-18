@@ -249,6 +249,7 @@ nav a {
 .icons_overview {
     margin: 5vw;
 }
+
 .wrapper {
     padding: 5vw;
     background: var(--color-2);
@@ -265,7 +266,7 @@ nav a {
     display: flex;
     height: auto;
     width: 7vw;
-    margin:0 auto;
+    margin: 0 auto;
 
 }
 
@@ -309,7 +310,7 @@ nav a {
 }
 
 .about_us_text {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
@@ -374,7 +375,7 @@ nav a {
 }
 
 .our_treasure_text {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
@@ -394,7 +395,7 @@ nav a {
     font-family: var(--secondary-font);
     color: var(--color-2);
     margin-bottom: 4vw;
-     font-size: 2vw;
+    font-size: 2vw;
 }
 
 .our_treasure_text p {
@@ -451,7 +452,7 @@ nav a {
     font-size: 2vw;
 }
 
-.winetastic_exp_text P {
+.winetastic_exp_text p {
     font-family: var(--primary-font);
     font-weight: 300;
     font-size: 1.3vw;
@@ -503,7 +504,7 @@ nav a {
 }
 
 footer {
-   background-color: var(--color-2);
+    background-color: var(--color-2);
 }
 
 .footergrid {
@@ -563,3 +564,91 @@ footer {
     padding-bottom: 2vw;
 }
 
+@media only screen and (max-width: 500px) {
+
+
+    header nav {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    header nav ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2.3vw;
+        margin-bottom: 1vw;
+    }
+
+    .logo {
+        display: flex;
+        width: 50%;
+        height: auto;
+        margin: 0 40% 0% 25%;
+    }
+
+    .video_title {
+        top: 42vw;
+        font-size: 1.8vw;
+    }
+
+    .xmas_text button {
+        font-size: 2vw;
+
+    }
+
+    .xmas_text {
+        top: 7vw;
+    }
+
+
+    .xmas_text h2 {
+        margin-bottom: 3.5vw;
+    }
+
+    .xmas_text p {
+        font-size: 2vw;
+        margin-bottom: 1vw;
+    }
+
+    .why_moldova {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+
+
+    }
+
+    .moldova_map {
+        height: auto;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 4vw;
+
+    }
+
+    .why_moldova_text {
+        text-align: center;
+        display: flex;
+        margin-top: 5vw;
+    }
+
+    .why_moldova_text h3 {
+        font-size: 2.5vw;
+    }
+
+    .why_moldova_text h1 {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    .why_moldova_text p {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+    }
+
+
+
+
+}
