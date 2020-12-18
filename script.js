@@ -1,3 +1,47 @@
+fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine")
+    .then(initial => initial.json())
+    .then(callback);
+
+function callback(data) {
+    console.log(data)
+    data.forEach(showProduct)
+}
+
+function showProduct(product) {
+    console.log(product)
+    const template = document.querySelector("#product_template").content;
+    const clone = template.cloneNode(true);
+
+    clone.querySelector(".productlist_title").textContent = product.title.rendered;
+    clone.querySelector(".productlist_winery").textContent = product.winery;
+    clone.querySelector(".productlist_description").textContent = product.excerpt.rendered;
+    clone.querySelector(".productlist_price").textContent = product.price + " DKK";
+
+    document.querySelector("main").appendChild(clone);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*clone.querySelector(".productlist_price").textContent = "$" + post.price;*/
+    /*clone.querySelector(".productlist_image").src = wine._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;*/
+
+    /*copy.querySelector(".content").innerHTML = post.content.rendered;*/
+
+
 //window.addEventListener('DOMContentLoaded', getData);
 //
 //const datalink = "http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?_embed";
@@ -121,30 +165,3 @@ function showWine(wine) {
 */
 
 
-
-fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine")
-    .then(initial => initial.json())
-    .then(callback);
-
-function callback(data) {
-    console.log(data)
-    data.forEach(showWine)
-}
-
-function showWine(wine) {
-    console.log(wine)
-    const template = document.querySelector("#product_template").content;
-    const clone = template.cloneNode(true);
-
-
-    clone.querySelector(".productlist_title").textContent = wine.title.rendered;
-    clone.querySelector(".productlist_winery").textContent = wine.winery;
-    clone.querySelector(".productlist_description").textContent = wine.excerpt.rendered;
-    clone.querySelector(".productlist_price").textContent = wine.price + " DKK";
-    /*clone.querySelector(".productlist_price").textContent = "$" + post.price;*/
-    /*clone.querySelector(".productlist_image").src = wine._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;*/
-
-    /*copy.querySelector(".content").innerHTML = post.content.rendered;*/
-
-    document.querySelector("main").appendChild(clone);
-}
