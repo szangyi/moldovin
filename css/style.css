@@ -738,7 +738,7 @@ footer {
     }
 
     .img_treasure_back {
-    background: white;
+        background: white;
     }
 
     .our_treasure_img {
@@ -775,12 +775,46 @@ footer {
     }
 
     .privateeventsimg {
-         width: 10rem;
+        width: 10rem;
         height: 10rem;
     }
 
     .eventimages button {
         font-size: 2vw;
     }
+
+
+     .our_partners {
+        display: none;
+}
+
+    .footergrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.8fr 1fr;
+        font-size: 3vw;
+        font-weight: 300;
+        line-height: 1.6;
+        margin-bottom: 6vw;
+    }
+
+    .logowhite {
+        width: 30vw;
+    }
+
+    .footer_3 {
+        display: none;
+    }
+
+    .ftitle_style {
+        font-size: 4vw;
+    }
+
+    .copyright {
+        font-size: 3vw;
+    }
+
+
+
 }
 
