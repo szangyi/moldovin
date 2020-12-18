@@ -30,7 +30,6 @@ function getData() {
     }
 }
 
-
 function handleData(posts) {
     console.log(posts)
     posts.forEach(showProduct)
@@ -45,6 +44,16 @@ function showProduct(product) {
     clone.querySelector(".product_winery").textContent = product.winery;
     clone.querySelector(".product_shortdescription").textContent = product.excerpt.rendered;
     clone.querySelector(".product_price").textContent = product.price + " DKK";
+
+    //clone.querySelector(".winery_name").textContent = product.winery;
+    //clone.querySelector(".winery_description").textContent = product.winery_description;
+
+
+    /*
+    <h3 class="winery_title">THE WINERY</h3>
+    <h2 class="winery_name">Carpe Diem</h2>
+    <p class="winery_description">
+    */
 
     const a = clone.querySelector('a');
     if (a) {
