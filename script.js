@@ -140,6 +140,8 @@ function showWine(wine) {
     clone.querySelector(".productlist_title").textContent = wine.title.rendered;
     clone.querySelector(".productlist_winery").textContent = wine.winery;
     clone.querySelector(".productlist_description").textContent = wine.excerpt.rendered;
+    clone.querySelector(".price").textContent = wine.price;
+    /*clone.querySelector(".productlist_price").textContent = "$" + post.price;*/
     /*clone.querySelector(".productlist_image").src = wine._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;*/
 
     /*copy.querySelector(".content").innerHTML = post.content.rendered;*/
