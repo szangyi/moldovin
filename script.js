@@ -41,10 +41,10 @@ function showProduct(product) {
     const template = document.querySelector("#product_template").content;
     const clone = template.cloneNode(true);
 
-    clone.querySelector(".productlist_title").textContent = product.title.rendered;
-    clone.querySelector(".productlist_winery").textContent = product.winery;
-    clone.querySelector(".productlist_description").textContent = product.excerpt.rendered;
-    clone.querySelector(".productlist_price").textContent = product.price + " DKK";
+    clone.querySelector(".product_title").textContent = product.title.rendered;
+    clone.querySelector(".product_winery").textContent = product.winery;
+    clone.querySelector(".product_shortdescription").textContent = product.excerpt.rendered;
+    clone.querySelector(".product_price").textContent = product.price + " DKK";
 
     const a = clone.querySelector('a');
     if (a) {
@@ -54,6 +54,11 @@ function showProduct(product) {
     /*const divProductDescription = copy.querySelector('.productlist_description');
     if (divProductDescription) {
         divProductDescription.innerHTML = product.excerpt.rendered;
+    }*/
+
+    /*const divProductLongDescription = copy.querySelector('.productlist_description');
+    if (divProductLongDescription) {
+        divProductLongDescription.innerHTML = product.excerpt.rendered;
     }*/
 
     document.querySelector("main").appendChild(clone);
