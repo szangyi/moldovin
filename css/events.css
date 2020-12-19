@@ -23,14 +23,12 @@
     --white-space: 1rem;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
 
 p {
     font-family: var(--primary-font);
     font-weight: 300;
+    font-size: 1.5vw;
+    line-height: 1.9
 }
 
 
@@ -44,12 +42,14 @@ h1 {
 h2,
 h5 {
     font-family: var(--secondary-font);
+    color: var(--color-2);
     padding-bottom: 3vw;
     font-size: 3vw;
 }
 
 h3 {
     font-family: var(--primary-font);
+    font-size: 1.4vw;
     text-transform: uppercase;
     color: #B2B2B2;
     font-weight: 300;
@@ -90,12 +90,35 @@ nav a {
     color: var(--color-4);
 }
 
+
 .logo {
     width: 100%;
     height: auto;
     padding-left: 5vw;
     padding-top: 1vw;
 }
+
+.cart {
+    width: 65%;
+    height: auto;
+    padding-top: 1vw;
+}
+
+.sticky_header {
+    background: var(--color-5);
+    color: var(--color-4);
+    padding: 0.5vw;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sticky_header p {
+    font-size: 1vw;
+}
+
 
 
 
@@ -135,7 +158,13 @@ nav a {
 
 .intro {
     text-align: center;
-    padding-bottom: 5vw;
+
+    margin: 5vw 10vw
+}
+
+.private {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .eventimages {
@@ -166,41 +195,97 @@ nav a {
 }
 
 button {
+    border: none;
+    border-radius: 0.3vw;
     background-color: var(--color-5);
+    font-family: var(--primary-font);
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
     color: white;
     text-transform: uppercase;
     border: none;
     padding: 1.3vw 2vw;
     width: fit-content;
+    font-weight: 400;
+    margin-top: 1.5vw;
 }
 
+button:hover {
+    opacity: 0.8
+}
+
+.stay_connected button {
+    padding-right: 4vw;
+    padding-left: 4vw;
+}
 
 .offers {
     background-color: var(--color-2);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5vw 0;
 }
 
 .offers h2 {
     color: white;
 }
 
-.offer img {
-    height: 12vw;
+.icon {
+    display: flex;
+    height: auto;
+    width: 7vw;
+    margin: 0 auto;
 }
 
-.offer_title {
-    color: white
+.icon2 {
+        display: flex;
+    height: 4vw;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 1vw;
 }
 
-.offer_des {
-    color: var(--color-3)
+.icon_text {
+    text-align: center;
+    color: var(--color-4);
+    font-family: var(--primary-font);
+    align-content: center;
+    padding-top: 2vw;
+
+
+}
+
+.icon_title {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+    color: white;
+}
+
+.icon_des {
+    font-weight: 300;
+    font-size: 1.2vw;
+    color: var(--color-3);
+
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.wrapper_offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3vw;
+    padding: 0 5vw;
+}
+
+.publicwinetasting {
+    margin-bottom: 2vw;
 }
 
 .gap1 {
@@ -212,6 +297,11 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center
+}
+
+.box2 {
+    border-right: 2px solid #CECECE;
+    border-left: 2px solid #CECECE;
 }
 
 .grey {
@@ -226,6 +316,11 @@ button {
 
 .people_icon {
     width: 8vw;
+    margin-right: 2vw;
+}
+
+section {
+    margin-top: 5vw;
 }
 
 .testimonial,
@@ -238,7 +333,16 @@ button {
 .wrapper2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*    grid-gap: 3vw*/
+    margin: 5vw;
+    grid-gap: 4vw;
+}
+
+.wrapper2pictureleft {
+    margin-left: 0;
+}
+
+.wrapper2pictureright {
+    margin-right: 0;
 }
 
 .event1image {
@@ -286,7 +390,8 @@ button {
 .textbox {
     display: flex;
     flex-direction: column;
-    justify-content: space-around
+    justify-content: center;
+    align-items: stretch;
 }
 
 li {
@@ -333,6 +438,7 @@ li {
 
 .test_des {
     padding: 4vw 3vw;
+    font-size: 1.2vw;
 }
 
 .left {
@@ -355,8 +461,13 @@ li {
     top: -2vw
 }
 
+.contactus {
+    margin: 0 10vw 5vw 10vw;
+}
+
 .wrapper_contactus {
     display: grid;
+    margin-top: 3vw;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1vw 3vw;
     grid-template-rows: 1fr 1fr 2fr 0.7fr;
@@ -400,12 +511,12 @@ li {
 .company_box,
 .phone_box {
     height: 4vw;
-    border: 1px solid var(--color-2);
+    border: 1px solid var(--color-3);
 }
 
 .message_box {
     height: 12vw;
-    border: 1px solid var(--color-2);
+    border: 1px solid var(--color-3);
 }
 
 .button_send_container {
@@ -415,4 +526,87 @@ li {
 .button_send {
     flex-grow: 1;
     padding: 0;
+}
+
+footer {
+    background-color: var(--color-2);
+    padding-top: 0.1vw;
+}
+
+footer p {
+    font-size: 1.1vw;
+}
+
+.footergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 7vw;
+    margin-top: 6vw;
+    color: white;
+    font-family: var(--primary-font);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1vw;
+    font-weight: 300;
+    line-height: 1.6;
+
+}
+
+
+.logowhite {
+    height: auto;
+    width: 13vw;
+}
+
+.ftitle_style {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: var(--color-5);
+    margin-bottom: 0.4vw;
+    font-size: 1.2vw;
+}
+
+.stay_connected button {
+    width: 19vw;
+    border: none;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    background-color: var(--color-5);
+    color: var(--color-4);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 1vw;
+}
+
+
+.copyright {
+    text-align: center;
+    margin-top: 3vw;
+    font-family: var(--primary-font);
+    font-size: 1vw;
+    font-weight: 300;
+    color: white;
+    background-color: var(--color-2);
+    padding-bottom: 2vw;
+}
+
+
+
+//--------------------------
+.about_us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5vw;
+    display: flex;
+    grid-gap: 4vw;
+}
+
+.about_us_img {
+    height: auto;
+    width: 40vw;
+    margin-left: 4vw;
+
 }

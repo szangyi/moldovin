@@ -110,7 +110,6 @@ nav a {
     font-size: 1vw;
     display: flex;
     justify-content: space-around;
-
 }
 
 .sticky_header p {
@@ -311,7 +310,8 @@ button:hover {
 
 .icon_des {
     font-weight: 300;
-    /*    font-size: 1.1vw;*/
+        font-size: 1.2vw;
+    color: var(--color-3);
 
 }
 
@@ -321,7 +321,6 @@ button:hover {
     margin: 5vw;
     display: flex;
     grid-gap: 4vw;
-
 }
 
 .about_us_img {
@@ -517,7 +516,6 @@ footer p {
         padding-top: 1vw;
         position: relative;
         left: 47%;
-
     }
 
     .sticky_header {
