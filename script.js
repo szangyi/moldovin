@@ -22,6 +22,8 @@ function getData() {
             .then(handleData)
     }
 
+    //routing in the script for tabs in the product page
+
 }
 
 function handleData(posts) {
