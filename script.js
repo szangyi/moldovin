@@ -1,13 +1,6 @@
 window.addEventListener('DOMContentLoaded', getData);
 
-const datalink = "http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=100";
-
-/*function getData() {
-    fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=100")
-        .then(initial => initial.json())
-        .then(handleData);
-}*/
-
+const datalink = "http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=100&_embed";
 
 function getData() {
     //getNav()
@@ -18,7 +11,7 @@ function getData() {
 
     //routing in the script
     if (the_product_id) {
-        fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine/" + the_product_id + "?_embed")
+        fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine/" + the_product_id + "?per_page=100&_embed")
             .then(res => res.json())
             .then(showProduct) //skipping the forEach loop
     } else if (!the_product_id && window.location.pathname == "/product.html") {
@@ -28,8 +21,8 @@ function getData() {
             .then(res => res.json())
             .then(handleData)
     }
-}
 
+}
 function handleData(posts) {
     console.log(posts)
     posts.forEach(showProduct)
@@ -37,7 +30,7 @@ function handleData(posts) {
 
 function showProduct(product) {
     //console.log(product)
-    const template = document.querySelector("#product_template").content;
+    const template = document.querySelector("template#product_template").content;
     const clone = template.cloneNode(true);
 
     clone.querySelector(".product_title").textContent = product.title.rendered;
@@ -45,20 +38,21 @@ function showProduct(product) {
     clone.querySelector(".product_shortdescription").textContent = product.excerpt.rendered;
     clone.querySelector(".product_price").textContent = product.price + " DKK";
 
+    clone.querySelector(".product_image").src = product._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
+
     //clone.querySelector(".winery_name").textContent = product.winery;
     //clone.querySelector(".winery_description").textContent = product.winery_description;
-
-
-    /*
-    <h3 class="winery_title">THE WINERY</h3>
-    <h2 class="winery_name">Carpe Diem</h2>
-    <p class="winery_description">
-    */
 
     const a = clone.querySelector('a');
     if (a) {
         a.href += product.id;
     }
+
+    document.querySelector("main").appendChild(clone);
+}
+
+
+
 
     /*const divProductShortDescription = copy.querySelector('.product_shortdescription');
     if (divProductShortDescription) {
@@ -69,11 +63,6 @@ function showProduct(product) {
     if (divProductLongDescription) {
         divProductLongDescription.innerHTML = product.content.rendered;
     }*/
-
-    document.querySelector("main").appendChild(clone);
-}
-
-
 
 
 
