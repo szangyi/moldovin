@@ -113,6 +113,10 @@ nav a {
 
 }
 
+.sticky_header p {
+    font-size: 1vw;
+}
+
 #sticky_offer {
     justify-content: center;
     margin: auto;
@@ -224,10 +228,20 @@ button {
     padding: 1.3vw 2vw;
     width: fit-content;
     font-weight: 400;
+    margin-top: 1.5vw;
 }
 
 button:hover {
     opacity: 0.8
+}
+
+.stay_connected button {
+    padding-right: 4vw;
+    padding-left: 4vw;
+}
+
+.xmas_text button {
+    margin:0;
 }
 
 .why_moldova {
@@ -394,13 +408,18 @@ button:hover {
 
 footer {
     background-color: var(--color-2);
+    padding-top: 0.1vw;
+}
+
+footer p {
+    font-size: 1.1vw;
 }
 
 .footergrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 7vw;
-    margin-top: 1vw;
+    margin-top: 6vw;
     color: white;
     font-family: var(--primary-font);
     margin-left: 5vw;
@@ -412,10 +431,8 @@ footer {
 }
 
 .logowhite {
-    margin-top: 2vw;
-    margin-left: 5vw;
     height: auto;
-    width: 10vw;
+    width: 13vw;
 }
 
 .ftitle_style {
@@ -423,7 +440,7 @@ footer {
     font-weight: 600;
     color: var(--color-5);
     margin-bottom: 0.4vw;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
 }
 
 .copyright {
@@ -450,7 +467,7 @@ footer {
     }
 
     .banner_homepage {
-    background-image: url(../images/photos/events/bgimage_events.png);
+    background-image: url(../images/photos/homepage/bannerhomepage.png);
     background-size: contain;
     height: 48vw;
     width: 100vw;
@@ -647,11 +664,15 @@ footer {
     .footergrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-columns: 1.8fr 1fr;
+        grid-template-columns: 1.2fr 1fr;
         font-size: 3vw;
         font-weight: 300;
         line-height: 1.6;
         margin-bottom: 6vw;
+    }
+
+    .footergrid p {
+        font-size: 1.8vw;
     }
 
     .logowhite {
@@ -667,7 +688,7 @@ footer {
     }
 
     .copyright {
-        font-size: 3vw;
+        font-size: 1.5vw;
     }
 
 }
