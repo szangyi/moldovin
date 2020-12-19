@@ -64,6 +64,12 @@ nav a {
     padding-top: 1vw;
 }
 
+.cart {
+    width: 65%;
+    height: auto;
+    padding-top: 1vw;
+}
+
 .sticky_header {
     background: var(--color-5);
     color: var(--color-4);
@@ -772,9 +778,9 @@ footer {
     }
 
 
-     .our_partners {
+    .our_partners {
         display: none;
-}
+    }
 
     .footergrid {
         display: grid;
@@ -803,4 +809,3 @@ footer {
     }
 
 }
-
