@@ -23,6 +23,44 @@
     --white-space: 1rem;
 }
 
+
+p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.5vw;
+    line-height: 1.9
+}
+
+
+h1 {
+    align-self: center;
+    color: white;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+
+h2,
+h5 {
+    font-family: var(--secondary-font);
+    color: var(--color-2);
+    padding-bottom: 3vw;
+    font-size: 3vw;
+}
+
+h3 {
+    font-family: var(--primary-font);
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: #B2B2B2;
+    font-weight: 300;
+}
+
+.cart {
+    width: 65%;
+    height: auto;
+    padding-top: 1vw;
+}
+
 nav {
     display: grid;
     justify-content: space-between;
@@ -64,10 +102,31 @@ nav a {
     padding-top: 1vw;
 }
 
-.cart {
-    width: 65%;
-    height: auto;
-    padding-top: 1vw;
+
+button {
+    border: none;
+    border-radius: 0.3vw;
+    background-color: var(--color-5);
+    font-family: var(--primary-font);
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 1.3vw 2vw;
+    width: fit-content;
+    font-weight: 400;
+    margin-top: 1.5vw;
+}
+
+button:hover {
+    opacity: 0.8
+}
+
+.stay_connected button {
+    padding-right: 4vw;
+    padding-left: 4vw;
 }
 
 
@@ -81,15 +140,6 @@ nav a {
     justify-content: center;
 
 }
-
-.banner_about h1 {
-    align-self: center;
-    color: white;
-    font-family: var(--secondary-font);
-    font-size: 3vw;
-    font-weight: 600;
-}
-
 .we_connection {
     text-align: center;
     margin: 5vw;
@@ -97,29 +147,6 @@ nav a {
     margin-right: 10vw;
 }
 
-.we_connection_text h3{
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.1vw;
-    color: var(--color-6);
-    margin-bottom: 1.5vw;
-}
-
-.we_connection_text h1 {
-    font-family: var(--secondary-font);
-    color: var(--color-2);
-    margin-bottom: 3vw;
-    font-size: 2vw;
-}
-
-
-.we_connection_text p {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.3vw;
-    line-height: 1.6;
-    margin-bottom: 3vw;
-}
 
 .the_beginnings {
         display: grid;
@@ -148,31 +175,9 @@ nav a {
     margin-left: 4vw;
 }
 
-.our_beginnings_text h3 {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.1vw;
-    color: var(--color-6);
-    margin-bottom: 0.3vw;
-}
-
-.our_beginnings_text h1 {
-    font-family: var(--secondary-font);
-    color: var(--color-2);
-    margin-bottom: 4vw;
-    font-size: 2vw;
-}
-
-.our_beginnings_text p {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.2vw;
-    line-height: 1.6;
-    margin-bottom: 3vw;
-}
 
 .wrapper {
-    padding: 5vw;
+    padding: 2vw 5vw;
     background: var(--color-4);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -209,29 +214,6 @@ nav a {
     margin-right: 20vw;
 }
 
-.meet_family_text h3 {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.1vw;
-    color: var(--color-6);
-    margin-bottom: 1.5vw;
-}
-
-.meet_family_text h1 {
-    font-family: var(--secondary-font);
-    color: var(--color-2);
-    margin-bottom: 3vw;
-    font-size: 2vw;
-}
-
-
-.meet_family_text p {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.2vw;
-    line-height: 1.6;
-    margin-bottom: 3vw;
-}
 
 .our_mission {
     text-align: center;
@@ -244,31 +226,6 @@ nav a {
     padding-right: 20vw;
     padding-top: 3vw;
     padding-bottom: 4vw;
-}
-
-.our_mission_text h3 {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.1vw;
-    color: var(--color-6);
-    margin-bottom: 1.5vw;
-}
-
-.our_mission_text h1 {
-    font-family: var(--secondary-font);
-    color: var(--color-4);
-    margin-bottom: 3vw;
-    font-size: 2vw;
-}
-
-.our_mission_text p {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.2vw;
-    line-height: 1.6;
-    margin-bottom: 3vw;
-    color: var(--color-4);
-
 }
 
 .wrapper_contactus {
@@ -290,13 +247,6 @@ nav a {
     margin-right: 15vw;
 }
 
-.center h5 {
-    font-family: var(--secondary-font);
-    color: var(--color-2);
-    margin-bottom: 4vw;
-    margin-top: 5vw;
-    font-size: 3vw;
-}
 .wrapper_contactus p {
     text-align: left;
     padding-bottom: 1vw;
@@ -368,13 +318,18 @@ nav a {
 
 footer {
     background-color: var(--color-2);
+    padding-top: 0.1vw;
+}
+
+footer p {
+    font-size: 1.1vw;
 }
 
 .footergrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 7vw;
-    margin-top: 1vw;
+    margin-top: 6vw;
     color: white;
     font-family: var(--primary-font);
     margin-left: 5vw;
@@ -386,12 +341,9 @@ footer {
 }
 
 .logowhite {
-    margin-top: 2vw;
-    margin-left: 5vw;
     height: auto;
-    width: 10vw;
+    width: 13vw;
 }
-
 .ftitle_style {
     font-family: var(--primary-font);
     font-weight: 600;
@@ -430,6 +382,20 @@ footer {
 @media only screen and (max-width: 500px) {
 
 
+     h3 {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+
     header nav {
         display: grid;
         grid-template-columns: 1fr;
@@ -450,20 +416,6 @@ footer {
         margin: 0 40% 0% 25%;
     }
 
-    .we_connection_text h3 {
-        font-size: 2.5vw;
-    }
-
-    .we_connection_text h1 {
-        font-size: 4vw;
-        margin-top: 1vw;
-    }
-
-    .we_connection_text p {
-        font-size: 3vw;
-        margin-bottom: 2vw;
-
-    }
 
     .the_beginnings {
         display: flex;
@@ -483,20 +435,6 @@ footer {
         text-align: center;
         display: flex;
         margin-top: 5vw;
-    }
-
-    .our_beginnings_text h3 {
-        font-size: 2.5vw;
-    }
-
-    .our_beginnings_text h1 {
-        font-size: 4vw;
-        margin-top: 1vw;
-    }
-
-    .our_beginnings_text p {
-         font-size: 3vw;
-        margin-bottom: 2vw;
     }
 
     .box {
@@ -524,19 +462,6 @@ footer {
     .meet_family {
         margin: 3vw;
     }
-    .meet_family_text h3 {
-        font-size: 2.5vw;
-    }
-
-    .meet_family_text h1 {
-        font-size: 4vw;
-        margin-top: 1vw;
-    }
-
-    .meet_family_text p {
-         font-size: 3vw;
-        margin-bottom: 2vw;
-    }
 
     .member_title {
         font-size: 2.4vw;
@@ -544,20 +469,6 @@ footer {
 
     .member_text {
         font-size: 2vw;
-    }
-
-    .our_mission_text h3 {
-        font-size: 2.5vw;
-    }
-
-    .our_mission_text h1 {
-        font-size: 4vw;
-        margin-top: 1vw;
-    }
-
-    .our_mission_text p {
-        font-size: 2.6vw;
-        margin-bottom: 2vw;
     }
 
     .our_mission_text {
@@ -575,18 +486,22 @@ footer {
         font-size: 2vw;
     }
 
-    .our_partners {
+     .our_partners {
         display: none;
-}
+    }
 
     .footergrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-columns: 1.8fr 1fr;
+        grid-template-columns: 1.2fr 1fr;
         font-size: 3vw;
         font-weight: 300;
         line-height: 1.6;
         margin-bottom: 6vw;
+    }
+
+    .footergrid p {
+        font-size: 1.8vw;
     }
 
     .logowhite {
@@ -602,7 +517,15 @@ footer {
     }
 
     .copyright {
-        font-size: 3vw;
+        font-size: 1.5vw;
     }
-
+    .cart {
+        width: 5%;
+        height: auto;
+        padding-top: 1vw;
+        position: relative;
+        left: 47%;
+    }
 }
+
+
