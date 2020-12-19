@@ -23,6 +23,37 @@
     --white-space: 1rem;
 }
 
+p {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 1.5vw;
+    line-height: 1.9
+}
+
+
+h1 {
+    align-self: center;
+    color: white;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+
+h2,
+h5 {
+    font-family: var(--secondary-font);
+    color: var(--color-2);
+    padding-bottom: 3vw;
+    font-size: 3vw;
+}
+
+h3 {
+    font-family: var(--primary-font);
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: #B2B2B2;
+    font-weight: 300;
+}
+
 nav {
     display: grid;
     justify-content: space-between;
@@ -179,20 +210,23 @@ nav a {
     margin-bottom: 2vw;
 }
 
-.xmas_text button {
+button {
     border: none;
-    padding: 1vw;
     border-radius: 0.3vw;
     background-color: var(--color-5);
-    color: var(--color-4);
     font-family: var(--primary-font);
-    font-weight: 300;
     opacity: 1;
     transition: 0.3s;
     cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 1.3vw 2vw;
+    width: fit-content;
+    font-weight: 400;
 }
 
-.xmas_text button:hover {
+button:hover {
     opacity: 0.8
 }
 
@@ -218,28 +252,7 @@ nav a {
     justify-content: center;
 }
 
-.why_moldova_text h3 {
-    font-family: var(--primary-font);
-    font-weight: 300;
-/*    font-size: 1.1vw;*/
-    color: var(--color-6);
-    margin-bottom: 0.3vw;
 
-}
-
-.why_moldova_text h1 {
-    font-family: var(--secondary-font);
-    color: var(--color-2);
-    margin-bottom: 4vw;
-/*    font-size: 2vw;*/
-}
-
-.why_moldova_text p {
-    font-family: var(--primary-font);
-    font-weight: 300;
-/*    font-size: 1.2vw;*/
-    line-height: 1.6;
-}
 
 .icons_overview {
     margin: 5vw;
@@ -279,12 +292,12 @@ nav a {
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 2vw;
-/*    font-size: 1.5vw;*/
+    /*    font-size: 1.5vw;*/
 }
 
 .icon_des {
     font-weight: 300;
-/*    font-size: 1.1vw;*/
+    /*    font-size: 1.1vw;*/
 
 }
 
@@ -309,49 +322,6 @@ nav a {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-}
-
-/*
-.about_us_text h3 {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.1vw;
-    color: var(--color-6);
-    margin-bottom: 0.3vw;
-}
-
-.about_us_text h1 {
-    font-family: var(--secondary-font);
-    color: var(--color-2);
-    margin-bottom: 4vw;
-    font-size: 2vw;
-}
-
-.about_us_text p {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.2vw;
-    line-height: 1.6;
-    margin-bottom: 3vw;
-}
-*/
-
-.about_us_text button {
-    width: 19vw;
-    border: none;
-    padding: 1vw;
-    border-radius: 0.3vw;
-    background-color: var(--color-5);
-    color: var(--color-4);
-    font-family: var(--primary-font);
-    font-weight: 300;
-    opacity: 1;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.about_us_text button:hover {
-    opacity: 0.8
 }
 
 .our_treasure {
@@ -380,46 +350,7 @@ nav a {
     margin-left: 5vw;
 }
 
-.our_treasure_text h3 {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.1vw;
-    color: var(--color-6);
-    margin-bottom: 0.3vw;
-}
 
-.our_treasure_text h1 {
-    font-family: var(--secondary-font);
-    color: var(--color-2);
-    margin-bottom: 4vw;
-    font-size: 2vw;
-}
-
-.our_treasure_text p {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.2vw;
-    line-height: 1.6;
-    margin-bottom: 3vw;
-}
-
-.our_treasure_text button {
-    width: 19vw;
-    border: none;
-    padding: 1vw;
-    border-radius: 0.3vw;
-    background-color: var(--color-5);
-    color: var(--color-4);
-    font-family: var(--primary-font);
-    font-weight: 300;
-    opacity: 1;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.our_treasure_text button:hover {
-    opacity: 0.8
-}
 
 .winetastic_exp {
     text-align: center;
@@ -432,29 +363,6 @@ nav a {
     margin-left: 10vw;
     margin-right: 10vw;
     text-align: center;
-}
-
-.winetastic_exp_text h3 {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.1vw;
-    color: var(--color-6);
-    margin-bottom: 1.5vw;
-}
-
-.winetastic_exp_text h1 {
-    font-family: var(--secondary-font);
-    color: var(--color-2);
-    margin-bottom: 3vw;
-    font-size: 2vw;
-}
-
-.winetastic_exp_text p {
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.3vw;
-    line-height: 1.6;
-    margin-bottom: 3vw;
 }
 
 .eventimages {
@@ -482,22 +390,6 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
-
-.eventimages button {
-    background-color: var(--color-5);
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    padding: 1.3vw 2vw;
-    width: fit-content;
-    color: var(--color-4);
-    font-family: var(--primary-font);
-    font-weight: 300;
-    opacity: 1;
-    border-radius: 0.3vw;
-    transition: 0.3s;
-    cursor: pointer;
 }
 
 footer {
@@ -534,22 +426,6 @@ footer {
     font-size: 1.2vw;
 }
 
-.stay_connected button {
-    width: 19vw;
-    border: none;
-    padding: 1vw;
-    border-radius: 0.3vw;
-    background-color: var(--color-5);
-    color: var(--color-4);
-    font-family: var(--primary-font);
-    font-weight: 300;
-    opacity: 1;
-    transition: 0.3s;
-    cursor: pointer;
-    margin-top: 1vw;
-}
-
-
 .copyright {
     text-align: center;
     margin-top: 3vw;
@@ -561,11 +437,41 @@ footer {
     padding-bottom: 2vw;
 }
 
+.banner_homepage {
+    display: none;
+}
 
 /* Media Queries */
 
 @media only screen and (max-width: 500px) {
 
+    .header_video {
+        display: none;
+    }
+
+    .banner_homepage {
+    background-image: url(../images/photos/events/bgimage_events.png);
+    background-size: contain;
+    height: 48vw;
+    width: 100vw;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
 
     header nav {
         display: grid;
@@ -578,6 +484,7 @@ footer {
         grid-template-columns: 1fr;
         font-size: 2.3vw;
         margin-bottom: 1vw;
+
     }
 
     .logo {
@@ -587,6 +494,19 @@ footer {
         margin: 0 40% 0% 25%;
     }
 
+    .cart {
+        width: 5%;
+        height: auto;
+        padding-top: 1vw;
+        position: relative;
+        left: 47%;
+
+    }
+
+    .sticky_header {
+        display: none;
+    }
+
 
     .xmas_text button {
         font-size: 2vw;
@@ -594,13 +514,13 @@ footer {
     }
 
     .xmas_text {
-        top: 7vw;
+        top: 3vw;
     }
 
-
-    .xmas_text h2 {
-        margin-bottom: 3.5vw;
+    .xmas_text h2{
+        margin-bottom: 1vw;
     }
+
 
     .xmas_text p {
         font-size: 2vw;
@@ -628,22 +548,10 @@ footer {
         margin-top: 5vw;
     }
 
-    .why_moldova_text h3 {
-        font-size: 2.5vw;
-    }
 
-    .why_moldova_text h1 {
-        font-size: 4vw;
-        margin-top: 1vw;
-    }
-
-    .why_moldova_text p {
-        font-size: 3vw;
-        margin-bottom: 2vw;
-    }
 
     .icon_des {
-        visibility: hidden;
+        display: none;
     }
 
     .icon {
@@ -679,21 +587,7 @@ footer {
         text-align: center;
     }
 
-    .about_us_text h3 {
-        font-size: 2.5vw;
-    }
-
-    .about_us_text h1 {
-        font-size: 4vw;
-        margin-top: 1vw;
-    }
-
-    .about_us_text p {
-        font-size: 3vw;
-        margin-bottom: 2vw;
-    }
-
-    .about_us_text button {
+    button {
         align-self: center;
         font-size: 2.3vw;
         width: 30vw;
@@ -711,27 +605,6 @@ footer {
         padding-top: 3vw;
     }
 
-    .our_treasure_text h3 {
-        font-size: 2.5vw;
-    }
-
-    .our_treasure_text h1 {
-        font-size: 4vw;
-        margin-top: 1vw;
-    }
-
-    .our_treasure_text p {
-        font-size: 3vw;
-        margin-bottom: 2vw;
-    }
-
-    .our_treasure_text button {
-        align-self: center;
-        font-size: 2.3vw;
-        width: 30vw;
-        padding: 2.5vw;
-        margin-top: 1vw;
-    }
 
     .img_treasure_back {
         background: white;
@@ -745,19 +618,6 @@ footer {
         margin-left: 5vw;
     }
 
-    .winetastic_exp_text h3 {
-        font-size: 2.5vw;
-    }
-
-    .winetastic_exp_text h1 {
-        font-size: 4vw;
-        margin-top: 1vw;
-    }
-
-    .winetastic_exp_text p {
-        font-size: 3vw;
-        margin-bottom: 2vw;
-    }
 
     .eventimages {
         display: flex;
