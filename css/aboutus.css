@@ -64,6 +64,13 @@ nav a {
     padding-top: 1vw;
 }
 
+.cart {
+    width: 65%;
+    height: auto;
+    padding-top: 1vw;
+}
+
+
 .banner_about {
     background-image: url(../images/photos/aboutus/bgimage_aboutus.png);
     background-size: contain;
