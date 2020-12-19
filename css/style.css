@@ -115,17 +115,6 @@ nav a {
     position: relative;
 }
 
-.video_title {
-    position: absolute;
-    top: 38vw;
-    left: 10vw;
-    right: 50vw;
-    z-index: 1;
-    color: white;
-    font-family: var(--primary-font);
-    font-weight: 300;
-    font-size: 1.5vw;
-}
 
 .xmas_offer {
     position: relative;
@@ -590,10 +579,6 @@ footer {
         margin: 0 40% 0% 25%;
     }
 
-    .video_title {
-        top: 42vw;
-        font-size: 1.8vw;
-    }
 
     .xmas_text button {
         font-size: 2vw;
