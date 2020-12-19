@@ -215,7 +215,7 @@ nav a {
 .why_moldova_text h3 {
     font-family: var(--primary-font);
     font-weight: 300;
-    font-size: 1.1vw;
+/*    font-size: 1.1vw;*/
     color: var(--color-6);
     margin-bottom: 0.3vw;
 
@@ -225,13 +225,13 @@ nav a {
     font-family: var(--secondary-font);
     color: var(--color-2);
     margin-bottom: 4vw;
-    font-size: 2vw;
+/*    font-size: 2vw;*/
 }
 
 .why_moldova_text p {
     font-family: var(--primary-font);
     font-weight: 300;
-    font-size: 1.2vw;
+/*    font-size: 1.2vw;*/
     line-height: 1.6;
 }
 
@@ -273,12 +273,12 @@ nav a {
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 2vw;
-    font-size: 1.5vw;
+/*    font-size: 1.5vw;*/
 }
 
 .icon_des {
     font-weight: 300;
-    font-size: 1.1vw;
+/*    font-size: 1.1vw;*/
 
 }
 
@@ -305,6 +305,7 @@ nav a {
     justify-content: center;
 }
 
+/*
 .about_us_text h3 {
     font-family: var(--primary-font);
     font-weight: 300;
@@ -327,6 +328,7 @@ nav a {
     line-height: 1.6;
     margin-bottom: 3vw;
 }
+*/
 
 .about_us_text button {
     width: 19vw;
