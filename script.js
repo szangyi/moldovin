@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', getData);
 const datalink = "http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=100&_embed";
 
 function getData() {
-    //getNav()
+    getCategories()
 
     const urlParams = new URLSearchParams(window.location.search);
     console.log("URLSearchParams " + window.location);
@@ -26,6 +26,22 @@ function getData() {
    //hideProductInfoTabs();
 }
 
+
+function getCategories(){
+    fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/categories?parent=6")
+            .then(res => res.json())
+            .then(setUpCategories)
+}
+
+function setUpCategories(catArray){
+    const template = document.querySelector("template#categories_template").content;
+    const parentElement = document.querySelector("section");
+    catArray.forEach(cat=>{
+        const clone =template.cloneNode(true);
+        clone.querySelector("p").textContent=cat.name;
+        parentElement.appendChild(clone);
+    })
+}
 
 function handleData(posts) {
     console.log(posts)
