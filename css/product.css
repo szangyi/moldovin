@@ -231,3 +231,13 @@ button {
 .suggestion_img {
     height: 15vw;
 }
+
+
+/* HIDE/SHOW CLASSES */
+
+.hide {
+   display:none;
+}
+.show {
+   display:block;
+}

@@ -4,6 +4,7 @@ const datalink = "http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=10
 
 function getData() {
     //getNav()
+
     const urlParams = new URLSearchParams(window.location.search);
     console.log("URLSearchParams " + window.location);
     const the_product_id = urlParams.get("product_id"); //getting the id from the URL
@@ -22,9 +23,9 @@ function getData() {
             .then(handleData)
     }
 
-    //routing in the script for tabs in the product page
-
+   //hideProductInfoTabs();
 }
+
 
 function handleData(posts) {
     console.log(posts)
@@ -58,7 +59,84 @@ function showProduct(product) {
     }
 
     document.querySelector("main").appendChild(clone);
+
+
+    hideProductInfoTabs();
+    //productDescriptionClicked();
+    //productProlileClicked();
 }
+
+
+/* Functions to show wineinfo tabs on product page */
+
+//1 show the wine info--description and profile are hidden
+//2 click in description
+//3 hide the wine info and show the description
+//4 click in the taste profile
+//5 hide the description and show the taste profile
+//but this needs to be looped
+
+//1
+function hideProductInfoTabs() {
+    console.log("hideProductInfoTabs");
+    document.querySelector(".description_info").classList.add("hide");
+    document.querySelector(".tasteprofile_info").classList.add("hide");
+    productDescriptionClicked();
+    productProfileClicked();
+    productWineInfoClicked();
+    }
+
+//2
+function productDescriptionClicked() {
+    console.log("productDescriptionClicked");
+    document.querySelector(".description").addEventListener("click", showProductDescription);
+}
+
+//3
+function showProductDescription() {
+    console.log("showProductDescription");
+    document.querySelector(".thewine_info_wrapper").classList.add("hide");
+    document.querySelector(".tasteprofile_info").classList.add("hide");
+    document.querySelector(".description_info").classList.remove("hide");
+}
+
+//4
+function productProfileClicked() {
+    console.log("productProfileClicked");
+    document.querySelector(".tasteprofile").addEventListener("click", showProductProfile);
+}
+
+//5
+function showProductProfile() {
+    console.log("showProductProfile");
+    document.querySelector(".description_info").classList.add("hide");
+    document.querySelector(".thewine_info_wrapper").classList.add("hide");
+    document.querySelector(".tasteprofile_info").classList.remove("hide");
+}
+
+//6
+function productWineInfoClicked() {
+    console.log("productWineInfoClicked");
+    document.querySelector(".thewine").addEventListener("click", showProductWineInfo);
+}
+
+//7
+function showProductWineInfo() {
+    console.log("showProductWineInfo");
+    document.querySelector(".description_info").classList.add("hide");
+    document.querySelector(".tasteprofile_info").classList.add("hide");
+    document.querySelector(".thewine_info_wrapper").classList.remove("hide");
+}
+
+/*
+<li class="thewine">The wine</li>
+<li class="description">Description</li>
+<li class="tasteprofile">Taste profile</li>
+*/
+
+
+
+
 
 
 
@@ -73,25 +151,6 @@ function showProduct(product) {
         divProductLongDescription.innerHTML = product.content.rendered;
     }*/
 
-
-
-
-//const a = copy.querySelector('a');
-//if (a) {
-//    a.href += change.id;
-//}
-
-
-
-
-
-
-
-
-
-/*clone.querySelector(".productlist_price").textContent = "$" + post.price;*/
-/*clone.querySelector(".productlist_image").src = wine._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;*/
-//clone.querySelector(".productlist_image").src = product._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
 
 /*copy.querySelector(".content").innerHTML = post.content.rendered;*/
 
