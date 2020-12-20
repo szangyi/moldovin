@@ -43,20 +43,28 @@ function showProduct(product) {
     clone.querySelector(".product_price").textContent = product.price + " DKK";
     clone.querySelector(".product_image").src = product._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
 
-    //clone.querySelector(".product_background").src = product.winebackground.guid;
-    //clone.querySelector(".volume").textContent = product.volume;
-    //clone.querySelector(".alcohol").textContent = product.alcohol_percentage;
+    clone.querySelector(".product_background").src = product.winebackground.guid;
+    clone.querySelector(".volume").textContent = product.volume;
+    clone.querySelector(".alcohol").textContent = product.alcohol_percentage;
+    clone.querySelector(".tasteprofile_img").src = product.taste_profile.guid;
     //add long description
     //add taste profile
 
-    //clone.querySelector(".winery_logo").src = product.winery_logo.guid;
-    //clone.querySelector(".winery_name").textContent = product.winery;
-    //clone.querySelector(".winery_description").textContent = product.winery_description;
+    clone.querySelector(".winery_logo").src = product.winery_logo.guid;
+    clone.querySelector(".winery_name").textContent = product.winery;
+    clone.querySelector(".winery_description").textContent = product.winery_description;
 
     const a = clone.querySelector('a');
     if (a) {
         a.href += product.id;
     }
+
+    const divProductLongDescription = clone.querySelector('.product_longdescription');
+    if (divProductLongDescription) {
+        divProductLongDescription.innerHTML = product.content.rendered;
+    }
+
+
 
     document.querySelector("main").appendChild(clone);
 
@@ -127,17 +135,6 @@ function showProductWineInfo() {
     document.querySelector(".tasteprofile_info").classList.add("hide");
     document.querySelector(".thewine_info_wrapper").classList.remove("hide");
 }
-
-/*
-<li class="thewine">The wine</li>
-<li class="description">Description</li>
-<li class="tasteprofile">Taste profile</li>
-*/
-
-
-
-
-
 
 
 
