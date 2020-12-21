@@ -2,154 +2,154 @@
 <html lang="">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="css/product.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="css/product.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <div> <a href="index.html"><img class="logo" src="images/icons/homepage/moldovin_logo.svg"></a></div>
+  <header>
+    <nav>
+      <div> <a href="index.html"><img class="logo" src="images/icons/homepage/moldovin_logo.svg"></a></div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="wineshop.html">WINE SHOP</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main></main>
+
+  <template id="product_template">
+    <article class="product">
+      <div class=product_card>
+        <div class="wrapper2">
+          <div class="wineimages">
+            <div class=product_background_container>
+              <img class="product_background" src="images/photos/wineshop/productbackground.png" alt="" />
+            </div>
+            <img class="product_image" src="images/photos/wineshop/femmefatale_wine.png" alt="" />
+          </div>
+          <div class="wineinfo">
+            <span class="center">
+              <h2 class="product_title">Femme Fatale</h2>
+              <h3 class="product_winery">Carpe Diem</h3>
+            </span>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="wineshop.html">WINE SHOP</a></li>
-                <li><a href="events.html">EVENTS</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main></main>
-
-    <template id="product_template">
-        <article class="product">
-            <div class=product_card>
-                <div class="wrapper2">
-                    <div class="wineimages">
-                        <div class=product_background_container>
-                            <img class="product_background" src="images/photos/wineshop/productbackground.png" alt="" />
-                        </div>
-                        <img class="product_image" src="images/photos/wineshop/femmefatale_wine.png" alt="" />
-                    </div>
-                    <div class="wineinfo">
-                        <span class="center">
-                            <h2 class="product_title">Femme Fatale</h2>
-                            <h3 class="product_winery">Carpe Diem</h3>
-                        </span>
-                        <ul>
-
-                            <!--
+              <!--
                             <a href="product.html?product_id=" class="thewine">The wine</a>
                             <a href="productdescription.html?product_id=" class="description">Description</a>
                             <a href="productprofile.html?product_id=" class="tasteprofile">Taste profile</a>
                             -->
 
-                            <!--
+              <!--
                             <li class="thewine"><a href="product.html?product_id=">The wine</a></li>
                             <li class="description"><a href="productdescription.html?product_id=">Description</a></li>
                             <li class="tasteprofile"><a href="productprofile.html?product_id=">Taste profile</a></li>
                             -->
 
-                            <li class="thewine">The wine</li>
-                            <li class="description">Description</li>
-                            <li class="tasteprofile">Taste profile</li>
+              <li class="thewine">The wine</li>
+              <li class="description">Description</li>
+              <li class="tasteprofile">Taste profile</li>
 
-                        </ul>
+            </ul>
 
-                        <div class="thewine_info_wrapper">
-                            <span class="thewine_info">
-                                <p class="product_shortdescription">Finely balanced wine with a lot of character - light, fresh, but still rich of fruity flavour</p>
-                                <p class="product_volume">Volume: <span class="volume">0,75</span> L</p>
-                                <p class="product_alcohol">Alc.%: <span class="alcohol">13.5</span> %</p>
-                                <p class="product_price">150 DKK</p>
-                                <p><strong>Quantity:</strong></p>
+            <div class="thewine_info_wrapper">
+              <span class="thewine_info">
+                <p class="product_shortdescription">Finely balanced wine with a lot of character - light, fresh, but still rich of fruity flavour</p>
+                <p class="product_volume">Volume: <span class="volume">0,75</span> L</p>
+                <p class="product_alcohol">Alc.%: <span class="alcohol">13.5</span> %</p>
+                <p class="product_price">150 DKK</p>
+                <p><strong>Quantity:</strong></p>
 
-                                <span class="shopping_buttons">
-                                    <button class="minus_btn">-</button>
-                                    <p class="quantity_number">1</p>
-                                    <button class="plus_btn">+</button>
-                                    <button class="addtocart_btn">ADD TO CART</button>
-                                </span>
-                            </span>
-                        </div>
+                <span class="shopping_buttons">
+                  <button class="minus_btn">-</button>
+                  <p class="quantity_number">1</p>
+                  <button class="plus_btn">+</button>
+                  <button class="addtocart_btn">ADD TO CART</button>
+                </span>
+              </span>
+            </div>
 
-                        <div class="description_info">
-                            <!--<span class="description_info" style="display:none">-->
-                            <p class="product_longdescription">Blend of Feteasca Alba and Feteasca Regala. Feteasca Alba is a light, fresh and delicate wine, whereas Feteasca Regala has a richer flavour of citrus and apple. The blend takes the best from both indigenous grapes, and creates a finely balanced wine with a lot of character!
+            <div class="description_info">
+              <!--<span class="description_info" style="display:none">-->
+              <p class="product_longdescription">Blend of Feteasca Alba and Feteasca Regala. Feteasca Alba is a light, fresh and delicate wine, whereas Feteasca Regala has a richer flavour of citrus and apple. The blend takes the best from both indigenous grapes, and creates a finely balanced wine with a lot of character!
 
-                            Gold Medal Berlin Wine Awards 2018.</p>
-                        </div>
+                Gold Medal Berlin Wine Awards 2018.</p>
+            </div>
 
-                        <div class="tasteprofile_info">
-                            <img class="tasteprofile_img" src="images/photos/wineshop/tasteprofile2.png" alt="" />
-                        </div>
-                        <!--
+            <div class="tasteprofile_info">
+              <img class="tasteprofile_img" src="images/photos/wineshop/tasteprofile2.png" alt="" />
+            </div>
+            <!--
                         <span class="tasteprofile_info" style="display:none">
                             <img class="tasteprofile_img" src="images/photos/wineshop/tasteprofile2.png" alt="" />
                         </span>
                         -->
 
-                    </div>
-                </div>
-            </div>
-            <section class="winery_info">
-                <span class="wineryimg">
-                    <img class="winery_logo" src="images/photos/wineshop/winery_carpediem.png" alt="" />
-                </span>
-                <span class="winerytext">
-                    <h3 class="winery_title">THE WINERY</h3>
-                    <h2 class="winery_name">Carpe Diem</h2>
-                    <p class="winery_description">Carpe Diem is a family owned winery that goes back four generations. The winery sits in Codru wine region, known for its amazing terroir. They use both French inspired and indigenous varieties to make individual unique wines and blends. The vineyards fill 10,5 ha, so therefore they are part of the Moldovan Association for Small Wineries. Each wine is delicately produced, and all grapes are hand picked and harvested manually.</p>
-                </span>
-            </section>
-        </article>
-    </template>
-
-
-    <article class="product_suggestions">
-        <span class="center">
-            <h3>You might also like</h3>
-        </span>
-        <div class="wrapper5">
-
-            <div class="box">
-                <img class="suggestion_img" src="images/photos/wineshop/femmefatale_wine.png" alt="" />
-                <p class="suggestion_title">Femme Fatale</p>
-                <p class="suggestion_winery">Carpe Diem</p>
-                <p class="suggestion_price">150 DKK</p>
-            </div>
-            <div class="box">
-                <img class="suggestion_img" src="images/photos/wineshop/1mimisauvignonblanc.png" alt="" />
-                <p class="suggestion_title">Sauvignon Blanc</p>
-                <p class="suggestion_winery">Castel Mimi</p>
-                <p class="suggestion_price">125 DKK</p>
-            </div>
-            <div class="box">
-                <img class="suggestion_img" src="images/photos/wineshop/1gitanararaneagra.png" alt="" />
-                <p class="suggestion_title">Rara Neagra</p>
-                <p class="suggestion_winery">Gitana</p>
-                <p class="suggestion_price">175 DKK</p>
-            </div>
-            <div class="box">
-                <img class="suggestion_img" src="images/photos/wineshop/1surori.png" alt="" />
-                <p class="suggestion_title">Surori Rose</p>
-                <p class="suggestion_winery">Gitana</p>
-                <p class="suggestion_price">195 DKK</p>
-            </div>
-            <div class="box">
-                <img class="suggestion_img" src="images/photos/wineshop/1feteascaalba.png" alt="" />
-                <p class="suggestion_title">Feteasca Alba</p>
-                <p class="suggestion_winery">Castel Mimi</p>
-                <p class="suggestion_price">125 DKK</p>
-            </div>
+          </div>
         </div>
+      </div>
+      <section class="winery_info">
+        <span class="wineryimg">
+          <img class="winery_logo" src="images/photos/wineshop/winery_carpediem.png" alt="" />
+        </span>
+        <span class="winerytext">
+          <h3 class="winery_title">THE WINERY</h3>
+          <h2 class="winery_name">Carpe Diem</h2>
+          <p class="winery_description">Carpe Diem is a family owned winery that goes back four generations. The winery sits in Codru wine region, known for its amazing terroir. They use both French inspired and indigenous varieties to make individual unique wines and blends. The vineyards fill 10,5 ha, so therefore they are part of the Moldovan Association for Small Wineries. Each wine is delicately produced, and all grapes are hand picked and harvested manually.</p>
+        </span>
+      </section>
     </article>
+  </template>
 
 
-    <script src="script.js"></script>
+  <article class="product_suggestions">
+    <span class="center">
+      <h3>You might also like</h3>
+    </span>
+    <div class="wrapper5">
+
+      <div class="box">
+        <img class="suggestion_img" src="images/photos/wineshop/femmefatale_wine.png" alt="" />
+        <p class="suggestion_title">Femme Fatale</p>
+        <p class="suggestion_winery">Carpe Diem</p>
+        <p class="suggestion_price">150 DKK</p>
+      </div>
+      <div class="box">
+        <img class="suggestion_img" src="images/photos/wineshop/1mimisauvignonblanc.png" alt="" />
+        <p class="suggestion_title">Sauvignon Blanc</p>
+        <p class="suggestion_winery">Castel Mimi</p>
+        <p class="suggestion_price">125 DKK</p>
+      </div>
+      <div class="box">
+        <img class="suggestion_img" src="images/photos/wineshop/1gitanararaneagra.png" alt="" />
+        <p class="suggestion_title">Rara Neagra</p>
+        <p class="suggestion_winery">Gitana</p>
+        <p class="suggestion_price">175 DKK</p>
+      </div>
+      <div class="box">
+        <img class="suggestion_img" src="images/photos/wineshop/1surori.png" alt="" />
+        <p class="suggestion_title">Surori Rose</p>
+        <p class="suggestion_winery">Gitana</p>
+        <p class="suggestion_price">195 DKK</p>
+      </div>
+      <div class="box">
+        <img class="suggestion_img" src="images/photos/wineshop/1feteascaalba.png" alt="" />
+        <p class="suggestion_title">Feteasca Alba</p>
+        <p class="suggestion_winery">Castel Mimi</p>
+        <p class="suggestion_price">125 DKK</p>
+      </div>
+    </div>
+  </article>
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>
