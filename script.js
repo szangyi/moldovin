@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', getData);
 const datalink = "http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=100&_embed";
 
 function getData() {
-    getCategories()
+    //getCategories()
 
     const urlParams = new URLSearchParams(window.location.search);
     console.log("URLSearchParams " + window.location);
@@ -27,7 +27,7 @@ function getData() {
 }
 
 
-function getCategories(){
+/*function getCategories(){
     fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/categories?parent=6")
             .then(res => res.json())
             .then(setUpCategories)
@@ -41,7 +41,7 @@ function setUpCategories(catArray){
         clone.querySelector("p").textContent=cat.name;
         parentElement.appendChild(clone);
     })
-}
+}*/
 
 function handleData(posts) {
     console.log(posts)
@@ -53,22 +53,22 @@ function showProduct(product) {
     const template = document.querySelector("template#product_template").content;
     const clone = template.cloneNode(true);
 
+    /* GETTING DATA FOR WINESHOP PAGE */
     clone.querySelector(".product_title").textContent = product.title.rendered;
     clone.querySelector(".product_winery").textContent = product.winery;
     clone.querySelector(".product_shortdescription").textContent = product.excerpt.rendered;
     clone.querySelector(".product_price").textContent = product.price + " DKK";
     clone.querySelector(".product_image").src = product._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
 
-    clone.querySelector(".product_background").src = product.winebackground.guid;
+    /* GETTING DATA FOR PRODUCT PAGE */
+    /*clone.querySelector(".product_background").src = product.winebackground.guid;
     clone.querySelector(".volume").textContent = product.volume;
     clone.querySelector(".alcohol").textContent = product.alcohol_percentage;
     clone.querySelector(".tasteprofile_img").src = product.taste_profile.guid;
-    //add long description
-    //add taste profile
 
     clone.querySelector(".winery_logo").src = product.winery_logo.guid;
     clone.querySelector(".winery_name").textContent = product.winery;
-    clone.querySelector(".winery_description").textContent = product.winery_description;
+    clone.querySelector(".winery_description").textContent = product.winery_description;*/
 
     const a = clone.querySelector('a');
     if (a) {
@@ -80,18 +80,13 @@ function showProduct(product) {
         divProductLongDescription.innerHTML = product.content.rendered;
     }
 
-
-
     document.querySelector("main").appendChild(clone);
 
-
-    hideProductInfoTabs();
-    //productDescriptionClicked();
-    //productProlileClicked();
+    //hideProductInfoTabs();
 }
 
 
-/* Functions to show wineinfo tabs on product page */
+/* FUNCTIONS TO SHOW WINEINFO TABS ON PRODUCT PAGE */
 
 //1 show the wine info--description and profile are hidden
 //2 click in description
