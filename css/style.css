@@ -405,6 +405,11 @@ button:hover {
     justify-content: flex-end;
 }
 
+.eventslink {
+    text-decoration: none;
+    color: var(--color-4);
+}
+
 footer {
     background-color: var(--color-2);
     padding-top: 0.1vw;

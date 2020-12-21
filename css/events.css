@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@100;300;400;700&display=swap');
+t@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@100;300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
 
 * {
@@ -378,6 +378,11 @@ section {
     margin: 8vw 0;
 }
 
+.eventslink {
+    text-decoration: none;
+    color: var(--color-4);
+}
+
 .center {
     text-align: center;
 }
@@ -549,7 +554,6 @@ footer p {
     font-size: 1vw;
     font-weight: 300;
     line-height: 1.6;
-
 }
 
 
