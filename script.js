@@ -5,23 +5,26 @@ window.addEventListener('DOMContentLoaded', getData);
 const datalink = "http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=100&_embed";
 
 function getData() {
-  //getCategories();
+  //getFilters();
   const urlParams = new URLSearchParams(window.location.search);
   console.log("URLSearchParams " + window.location);
   const the_product_id = urlParams.get("product_id");
   const the_cat_id = urlParams.get("cat_id"); //getting the id from the URL
-  //  console.log(the_product_id);
+  //console.log(the_product_id);
   console.log("cat: " + the_cat_id);
 
   if (!the_product_id) {
     getFilters();
   }
   //routing in the script
+    //this will only run in the product page
   if (the_product_id) {
     productPage = true;
     fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine/" + the_product_id + "?per_page=100&_embed")
       .then(res => res.json())
       .then(showProduct) //skipping the forEach loop
+
+    //this will only run in the wineshop page - It adds the id of the categories dinamically in the url
   } else if (the_cat_id) {
     fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?categories=" + the_cat_id + "&per_page=100&_embed")
       .then(res => res.json())
@@ -36,7 +39,9 @@ function getData() {
   //hideProductInfoTabs();
 }
 
-/* CATEGORIES FROM LASSE VIDEO */
+
+/* Fetching the filters and displaying them */
+
 function getFilters() {
   fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/categories?parent=6")
     .then(res => res.json())
@@ -60,6 +65,9 @@ function addCatLink(oneCategory) {
   li.appendChild(a);
   document.querySelector('.filterwrapper').appendChild(li);
 }
+
+
+/* Fetching the products and displaying them */
 
 function handleData(posts) {
   console.log(posts)
