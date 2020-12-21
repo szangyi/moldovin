@@ -104,6 +104,7 @@ nav li:hover {
     width: 65%;
     height: auto;
     padding-top: 1vw;
+    cursor: pointer;
 }
 
 .sticky_header {
