@@ -4,6 +4,7 @@ const datalink = "http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?per_page=10
 
 function getData() {
     //getCategories()
+    getFilters()
 
     const urlParams = new URLSearchParams(window.location.search);
     console.log("URLSearchParams " + window.location);
@@ -27,6 +28,7 @@ function getData() {
 }
 
 
+/* CATEGORIES FROM JONAS VIDEO */
 /*function getCategories(){
     fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/categories?parent=6")
             .then(res => res.json())
@@ -42,6 +44,46 @@ function setUpCategories(catArray){
         parentElement.appendChild(clone);
     })
 }*/
+
+/* CATEGORIES FROM LASSE VIDEO */
+function getFilters() {
+    fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/categories?parent=6")
+        .then(res => res.json())
+        .then(handleCategoryData)
+}
+
+function handleCategoryData(categories) {
+    //console.log("in handleCategory", categories)
+    categories.forEach(addCatLink);
+}
+
+function addCatLink(oneCategory) {
+    console.log(oneCategory);
+    const a = document.createElement('a');
+    a.textContent = oneCategory.name;
+    a.href = "wineshopcategory.html?cat_id=" + oneCategory.id;
+    console.log(a)
+    document.querySelector('.filterli').appendChild(a);
+
+    /*
+    //CATEGORIES FROM TUTOR - AP PROJECT
+    //create another js just for categories and fetch from the link below
+    console.log("cat", oneCategory);
+    fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/categories/" + oneCategory.id)
+        .then(res => res.json())
+        .then((data) =>
+            let categoryData = data)
+    console.log(oneCategory);
+
+    const template = document.querySelector("#filterTemplate").content;
+    const copy = template.cloneNode(true);
+    console.log(copy)
+    copy.querySelector('a').textContent = oneCategory.name;
+    copy.querySelector('a').href = "category.html?cat_id=" + oneCategory.id;
+    document.querySelector("#filtercontainer").appendChild(copy);
+    */
+}
+
 
 function handleData(posts) {
     console.log(posts)
