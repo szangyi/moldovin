@@ -119,7 +119,6 @@ nav a {
     background-repeat: no-repeat;
 }
 
-
 .wrapper2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -130,6 +129,10 @@ nav a {
 .wineimages {
     display: flex;
     width: 31rem;
+}
+
+.tasteprofile_img {
+    width: 22rem;
 }
 
 .product_background {
