@@ -245,4 +245,24 @@ main {
 
 .product_shortdescription {
     text-align: center;
+    color: var(--color-2);
+}
+
+
+/* HOVER STYLING*/
+
+a.subpage_link {
+    text-decoration: none;
+}
+
+/*article a:hover {
+    transform: scale(1.05);
+}*/
+
+/*.product_image:hover {
+    transform: scale(1.07);
+}*/
+
+.productlist:hover {
+    background-color: var(--color-3);
 }
