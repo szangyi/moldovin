@@ -244,3 +244,32 @@ button {
 .show {
    display:block;
 }
+
+
+/* SHOW CURSOR WHEN HOVER */
+
+.thewine, .description, .tasteprofile, .box {
+    cursor: pointer;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+button {
+    border: none;
+    border-radius: 0.3vw;
+    background-color: var(--color-5);
+    font-family: var(--primary-font);
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 1.3vw 2vw;
+    width: fit-content;
+    font-weight: 400;
+    margin-top: 1.5vw;
+}
