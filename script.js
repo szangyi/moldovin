@@ -18,14 +18,14 @@ function getData() {
         getFilters();
     }
 
-    //Routing in the script - This will only run in the product page - It adds the id of the products dinamically in the url
+    //Routing in the script - This will only run in the product page
     if (the_product_id) {
         productPage = true;
         fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine/" + the_product_id + "?per_page=100&_embed")
             .then(res => res.json())
             .then(showProduct) //skipping the forEach loop
 
-    //Routing in the script - This will only run in the wineshop page - It adds the id of the categories dinamically in the url
+    //Routing in the script - This will only run in the wineshop page
     } else if (the_cat_id) {
         fetch("http://a-day.dk/semester-2-exam/wp-json/wp/v2/wine?categories=" + the_cat_id + "&per_page=100&_embed")
             .then(res => res.json())
