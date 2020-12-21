@@ -102,6 +102,7 @@ nav a {
     width: 65%;
     height: auto;
     padding-top: 1vw;
+    cursor: pointer;
 }
 
 .sticky_header {

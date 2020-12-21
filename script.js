@@ -1,5 +1,3 @@
-//cursor: pointer in the CSS
-
 let productPage = false;
 
 window.addEventListener('DOMContentLoaded', getData);
@@ -95,7 +93,6 @@ function showProduct(product) {
     if (divProductLongDescription) {
       divProductLongDescription.innerHTML = product.content.rendered;
     }
-
   }
 
   const a = clone.querySelector('a');
@@ -116,10 +113,11 @@ function showProduct(product) {
 
 //1 show the wine info--description and profile are hidden
 //2 click in description
-//3 hide the wine info and show the description
+//3 hide the wine info and taste profile and show the description
 //4 click in the taste profile
-//5 hide the description and show the taste profile
-//but this needs to be looped
+//5 hide the description and the wine info and show the taste profile
+//6 click in the wine info
+//7 hide the taste profile and the description and show the wine info
 
 //1
 function hideProductInfoTabs() {

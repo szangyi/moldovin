@@ -69,6 +69,7 @@ nav a {
     color: var(--color-4);
 }
 
+
 .logo {
     width: 100%;
     height: auto;
@@ -76,7 +77,12 @@ nav a {
     padding-top: 1vw;
 }
 
-
+.cart {
+    width: 65%;
+    height: auto;
+    padding-top: 1vw;
+    cursor: pointer;
+}
 /* TEXT STYLING */
 
 .product_shortdescription {

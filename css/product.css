@@ -96,8 +96,12 @@ nav a {
     padding-top: 1vw;
 }
 
-
-
+.cart {
+    width: 65%;
+    height: auto;
+    padding-top: 1vw;
+    cursor: pointer;
+}
 
 .intro {
     text-align: center;
