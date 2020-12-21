@@ -86,12 +86,18 @@ nav li {
     padding-top: 2vw;
     padding-bottom: 1vw;
     color: var(--color-4);
+    border-bottom: 2px solid var(--color-2)
 
 }
 
 nav a {
     text-decoration: none;
     color: var(--color-4);
+}
+
+nav li:hover {
+    transition: 0.5s;
+    border-bottom: 2px solid white
 }
 
 
@@ -140,6 +146,7 @@ button:hover {
     justify-content: center;
 
 }
+
 .we_connection {
     text-align: center;
     margin: 5vw;
@@ -149,7 +156,7 @@ button:hover {
 
 
 .the_beginnings {
-        display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 5vw;
     margin-bottom: 5vw;
@@ -216,16 +223,39 @@ button:hover {
 
 
 .our_mission {
-    text-align: center;
-    margin-top: 5vw;
-    background: var(--color-2);
+
 }
 
 .our_mission_text {
-    padding-left: 20vw;
-    padding-right: 20vw;
-    padding-top: 3vw;
-    padding-bottom: 4vw;
+       text-align: center;
+    margin-top: 5vw;
+    background: var(--color-2);
+    padding: 7vw 20vw;
+}
+
+.quotemark_red {
+    background-image: url(../images/icons/events/quotemark_red.png);
+    background-size: cover;
+    width: 10vw;
+    height: 14vw;
+    position: relative;
+    bottom: -8vw;
+    z-index: 1;
+    left: 5vw;
+    margin-top: -10vw;
+}
+
+.quotemark_red_180deg {
+    background-image: url(../images/icons/events/quotemark_red.png);
+    background-size: cover;
+    transform: rotate(180deg);
+    width: 10vw;
+    height: 14vw;
+    position: relative;
+    bottom: -8vw;
+    z-index: 1;
+    left: 85vw;
+    margin-top: -10vw;
 }
 
 .wrapper_contactus {
@@ -276,7 +306,6 @@ button:hover {
 
 .button_send_container {
     grid-area: button_send_container;
-    background-color:
 }
 
 
@@ -302,7 +331,7 @@ button:hover {
 .button_send {
     flex-grow: 1;
     padding: 0;
-    background-color:  var(--color-5);
+    background-color: var(--color-5);
     border: none;
     border-radius: 0.3vw;
     color: var(--color-4);
@@ -327,23 +356,39 @@ footer p {
 
 .footergrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 7vw;
-    margin-top: 6vw;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-column-gap: 4vw;
+    margin-top: 4vw;
     color: white;
     font-family: var(--primary-font);
-    margin-left: 5vw;
-    margin-right: 5vw;
-    font-size: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 1.5vw;
     font-weight: 300;
     line-height: 1.6;
 
+}
+
+.partnerlogo {
+    height: 3vw;
+}
+
+
+a.footerlink {
+    text-decoration: none;
+    color: white;
+}
+
+a.footerlink:visited {
+    text-decoration: none;
+    color: white;
 }
 
 .logowhite {
     height: auto;
     width: 13vw;
 }
+
 .ftitle_style {
     font-family: var(--primary-font);
     font-weight: 600;
@@ -382,7 +427,7 @@ footer p {
 @media only screen and (max-width: 500px) {
 
 
-     h3 {
+    h3 {
         font-size: 2.5vw;
     }
 
@@ -444,15 +489,15 @@ footer p {
     }
 
     .wrapper {
-    padding: 10vw;
-    background: var(--color-4);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 1rem;
-    align-items: center;
-    text-align: center;
-}
+        padding: 10vw;
+        background: var(--color-4);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1rem;
+        align-items: center;
+        text-align: center;
+    }
 
     .member {
         align-self: center;
@@ -486,22 +531,20 @@ footer p {
         font-size: 2vw;
     }
 
-     .our_partners {
+    .our_partners {
         display: none;
     }
 
     .footergrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-columns: 1.2fr 1fr;
-        font-size: 3vw;
         font-weight: 300;
         line-height: 1.6;
         margin-bottom: 6vw;
     }
 
     .footergrid p {
-        font-size: 1.8vw;
+        font-size: 2vw;
     }
 
     .logowhite {
@@ -519,6 +562,7 @@ footer p {
     .copyright {
         font-size: 1.5vw;
     }
+
     .cart {
         width: 5%;
         height: auto;
@@ -526,6 +570,24 @@ footer p {
         position: relative;
         left: 47%;
     }
+
+    .banner_about {
+        display: none;
+
+    }
+
+    .the_beginnings {
+        padding: 5vw;
+        margin-left: 0;
+    }
+
+    .the_beginnings img {
+        margin-left: 5vw;
+    }
+
+      .center {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
 }
-
-

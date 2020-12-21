@@ -79,6 +79,7 @@ nav li {
     padding-top: 2vw;
     padding-bottom: 1vw;
     color: var(--color-4);
+    border-bottom: 2px solid var(--color-2)
 
 }
 
@@ -87,6 +88,10 @@ nav a {
     color: var(--color-4);
 }
 
+nav li:hover {
+    transition: 0.5s;
+    border-bottom: 2px solid white
+}
 
 .logo {
     width: 100%;
@@ -240,7 +245,7 @@ button:hover {
 }
 
 .xmas_text button {
-    margin:0;
+    margin: 0;
 }
 
 .why_moldova {
@@ -279,8 +284,6 @@ button:hover {
     grid-template-rows: 1fr 1fr;
     grid-gap: 3rem;
     align-items: center;
-
-
 }
 
 .icon {
@@ -310,7 +313,7 @@ button:hover {
 
 .icon_des {
     font-weight: 300;
-        font-size: 1.2vw;
+    font-size: 1.2vw;
     color: var(--color-3);
 
 }
@@ -421,18 +424,33 @@ footer p {
 
 .footergrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 7vw;
-    margin-top: 6vw;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-column-gap: 4vw;
+    margin-top: 4vw;
     color: white;
     font-family: var(--primary-font);
-    margin-left: 5vw;
-    margin-right: 5vw;
-    font-size: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 1.5vw;
     font-weight: 300;
     line-height: 1.6;
 
 }
+
+.partnerlogo {
+    height: 3vw;
+}
+
+a.footerlink {
+    text-decoration: none;
+    color: white;
+}
+
+a.footerlink:visited {
+    text-decoration: none;
+    color: white;
+}
+
 
 .logowhite {
     height: auto;
@@ -471,15 +489,17 @@ footer p {
     }
 
     .banner_homepage {
-    background-image: url(../images/photos/homepage/bannerhomepage.png);
-    background-size: contain;
-    height: 48vw;
-    width: 100vw;
-    margin-bottom: 4vw;
-    display: flex;
-    justify-content: center;
-
-}
+        /*
+        background-image: url(../images/photos/homepage/bannerhomepage.png);
+        background-size: contain;
+        height: 43vw;
+        width: 100%;
+        margin-bottom: 4vw;
+        display: flex;
+        justify-content: center;
+*/
+        display: none
+    }
 
     h3 {
         font-size: 2.5vw;
@@ -505,7 +525,7 @@ footer p {
         grid-template-columns: 1fr;
         font-size: 2.3vw;
         margin-bottom: 1vw;
-
+        padding: 0px;
     }
 
     .logo {
@@ -527,7 +547,6 @@ footer p {
         display: none;
     }
 
-
     .xmas_text button {
         font-size: 2vw;
 
@@ -537,7 +556,7 @@ footer p {
         top: 3vw;
     }
 
-    .xmas_text h2{
+    .xmas_text h2 {
         margin-bottom: 1vw;
     }
 
@@ -659,6 +678,10 @@ footer p {
         font-size: 2vw;
     }
 
+    .eventimages button p {
+        margin: 0;
+    }
+
 
     .our_partners {
         display: none;
@@ -667,15 +690,13 @@ footer p {
     .footergrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-columns: 1.2fr 1fr;
-        font-size: 3vw;
         font-weight: 300;
         line-height: 1.6;
         margin-bottom: 6vw;
     }
 
     .footergrid p {
-        font-size: 1.8vw;
+        font-size: 2vw;
     }
 
     .logowhite {
