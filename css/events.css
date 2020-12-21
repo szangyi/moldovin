@@ -23,6 +23,11 @@ t@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&famil
     --white-space: 1rem;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 
 p {
     font-family: var(--primary-font);
@@ -140,7 +145,7 @@ nav li:hover {
 .banner_events {
     background-image: url(../images/photos/events/bgimage_events.png);
     background-size: contain;
-    height: 46vw;
+    height: 48vw;
     width: 100%;
     margin-bottom: 4vw;
     display: flex;
@@ -151,7 +156,7 @@ nav li:hover {
 .banner_publicevents {
     background-image: url(../images/photos/events/bgimage_eventspublic.png);
     background-size: contain;
-    height: 46vw;
+    height: 48vw;
     width: 100%;
     margin-bottom: 4vw;
     display: flex;
@@ -162,7 +167,7 @@ nav li:hover {
 .banner_privateevents {
     background-image: url(../images/photos/events/bgimage_eventsprivate.png);
     background-size: contain;
-    height: 46vw;
+    height: 48vw;
     width: 100%;
     margin-bottom: 4vw;
     display: flex;
