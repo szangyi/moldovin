@@ -37,18 +37,22 @@ body {
 p {
     font-family: var(--primary-font);
     font-weight: 300;
+    font-size: 1.5vw;
+    line-height: 1.9;
 }
 
 h2,
 h5 {
     font-family: var(--secondary-font);
+   color: var(--color-2);
     font-size: 3vw;
 }
 
 h3 {
     font-family: var(--primary-font);
+    font-size: 1.4vw;
     text-transform: uppercase;
-    color: var(--color-8);
+    color: #B2B2B2;
     font-weight: 300;
 }
 
@@ -128,11 +132,11 @@ nav a {
     grid-template-columns: 1fr 1fr;
 }
 
-.wineinfo {}
-
 .wineimages {
     display: flex;
-    width: 31rem;
+/*    width: 31rem;*/
+    margin-right: -5vw;
+
 }
 
 .tasteprofile_img {
@@ -140,15 +144,17 @@ nav a {
 }
 
 .product_background {
-    width: 26rem;
+/*    width: 26rem;*/
+    width: 50vw;
 }
 
 .product_image {
-    width: 8rem;
+/*    width: 8rem;*/
+    width: 16vw;
     height: auto;
     position: relative;
     right: 5rem;
-    top: -4rem
+    top: -3rem
 }
 
 .wineinfo ul {
@@ -162,6 +168,7 @@ nav a {
 .wineinfo ul li {
     padding: 0 0 1vw 0;
     border-bottom: 2px solid white;
+    font-size: 1.6vw;
 }
 
 .wineinfo ul li:active {
@@ -176,14 +183,29 @@ nav a {
     transition: 0.5s;
 }
 
+
+.thewine, .description, .tasteprofile {
+    font-size: 1.5vw;
+}
 .center {
     text-align: center;
 }
 
-.product_price {
+.mightlike {
+    border-top: solid 1px #E6E6E6;
+    padding: 2vw 5vw 3vw 5vw;
+}
+
+.product_price, .price {
     font-family: var(--secondary-font);
+    padding-top: 2vw;
+    font-size: 2.5vw;
+    color: var(--color-5);
     font-weight: 600;
-    color: var(--color-5)
+}
+
+.product_volume, .product_alcohol {
+    font-style: italic;
 }
 
 .shopping_buttons {
@@ -191,14 +213,8 @@ nav a {
     align-items: center;
 }
 
-button {
-    background-color: var(--color-5);
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    padding: 1.3vw 2vw;
-    width: fit-content;
-
+.quantity_number {
+    align-self: center;
 }
 
 .minus_btn {
@@ -217,12 +233,20 @@ button {
 .winery_info {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    margin-bottom: 7vw;
+}
+
+.wineryimg {
+    align-self: center;
 }
 
 .winery_logo {
     width: 15vw;
 }
 
+.winery_description {
+    padding-top: 2vw;
+}
 
 .wrapper5 {
     display: flex;
@@ -233,6 +257,10 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.product_suggestions {
+    margin-bottom: 8vw;
 }
 
 .suggestion_img {
@@ -275,5 +303,178 @@ button {
     padding: 1.3vw 2vw;
     width: fit-content;
     font-weight: 400;
-    margin-top: 1.5vw;
+/*    margin-top: 1.5vw;*/
+}
+
+
+footer {
+    background-color: var(--color-2);
+    padding-top: 0.1vw;
+}
+
+footer p {
+    font-size: 1.1vw;
+}
+
+.footergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-column-gap: 4vw;
+    margin-top: 4vw;
+    color: white;
+    font-family: var(--primary-font);
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 1.5vw;
+    font-weight: 300;
+    line-height: 1.6;
+
+}
+
+.partnerlogo {
+    height: 3vw;
+}
+
+
+a.footerlink {
+    text-decoration: none;
+    color: white;
+}
+
+a.footerlink:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.logowhite {
+    height: auto;
+    width: 13vw;
+}
+
+.ftitle_style {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: var(--color-5);
+    margin-bottom: 0.4vw;
+    font-size: 1.2vw;
+}
+
+.stay_connected button {
+    width: 19vw;
+    border: none;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    background-color: var(--color-5);
+    color: var(--color-4);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 1vw;
+}
+
+
+.copyright {
+    text-align: center;
+    margin-top: 3vw;
+    font-family: var(--primary-font);
+    font-size: 1vw;
+    font-weight: 300;
+    color: white;
+    background-color: var(--color-2);
+    padding-bottom: 2vw;
+}
+
+@media only screen and (max-width: 500px) {
+
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+
+    header nav {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    header nav ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2.3vw;
+        margin-bottom: 1vw;
+    }
+
+    .logo {
+        display: flex;
+        width: 50%;
+        height: auto;
+        margin: 0 40% 0% 25%;
+    }
+
+       .cart {
+        width: 5%;
+        height: auto;
+        padding-top: 1vw;
+        position: relative;
+        left: 47%;
+    }
+
+     button {
+        align-self: center;
+        font-size: 2.3vw;
+        width: 30vw;
+        padding: 2.5vw;
+        margin-top: 1vw;
+    }
+
+    .wrapper2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .wineimages {
+        display: flex;
+        align-items: center;
+        margin: 0vw 0vw 0vw 3vw;
+    }
+
+    .product_background {
+        width: 90%;
+    }
+
+    .product_image {
+        width: 22vw;
+        position: relative;
+        top: 0.5vw;
+        left: -20vw;
+    }
+
+    .winery_info {
+        margin-top: 5vw;
+    }
+
+    .wineinfo {
+        margin: 0 5vw;
+    }
+
+    .wineinfo ul li {
+        font-size: 3vw
+    }
+
+    .suggestion3, .suggestion5 {
+        display: none;
+    }
+
 }
